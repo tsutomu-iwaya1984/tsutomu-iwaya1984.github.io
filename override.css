@@ -124,6 +124,8 @@ body{background:#fff}
 
 /* Inline line-break anchors inside prose must keep the paragraph typography. */
 .protocol-step p .no-break,.quote-block p .no-break{font:inherit!important;letter-spacing:inherit!important;color:inherit!important;line-height:inherit;display:inline-block}
+.protocol-step p .intentional-break,.quote-block p .intentional-break{font:inherit!important;letter-spacing:inherit!important;color:inherit!important;line-height:inherit;display:inline}
+@media(min-width:761px){.protocol-step p .intentional-break,.quote-block p .intentional-break{white-space:nowrap}}
 
 /* Final palette and mobile rules intentionally come last to override legacy defaults. */
 .strength-grid .card-wide{background:#f04438;color:#fff;border-color:#f04438;box-shadow:8px 8px 0 #ffb3ad}
