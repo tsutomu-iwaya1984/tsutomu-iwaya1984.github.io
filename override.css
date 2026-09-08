@@ -22,6 +22,7 @@
 .no-break{white-space:nowrap;display:inline-block}
 .phrase-lock{white-space:nowrap;display:inline-block}
 .protocol-step p .phrase-lock,.quote-block p .phrase-lock{font:inherit;letter-spacing:inherit;color:inherit}
+p .phrase-lock{white-space:normal;display:inline;font:inherit;letter-spacing:inherit;color:inherit}
 body,p,h1,h2,h3{word-break:normal;overflow-wrap:normal;line-break:strict}
 .closing>p:not(.eyebrow){text-wrap:pretty}
 @media(max-width:760px){
