@@ -152,4 +152,8 @@ html,body{max-width:100%;overflow-x:hidden}
   .hero h1,.section-head h2,.closing h2,.card h3{max-width:none;text-wrap:pretty;line-break:strict}
   .card h3{max-width:none}
   .lead,.card p,.protocol-step p,.quote-block p,.timeline p,.facts p,.closing>p:not(.eyebrow){text-wrap:pretty;line-break:strict}
+  .hero h1{font-size:clamp(2.2rem,9.6vw,2.7rem)}
+  .hero h1 span:first-child{white-space:nowrap}
+  #strengths .section-head h2 em,.field-gallery .section-head h2 em,#career .section-head h2 em{white-space:nowrap}
+  #approach .section-head h2>span:first-child{white-space:nowrap}
 }
