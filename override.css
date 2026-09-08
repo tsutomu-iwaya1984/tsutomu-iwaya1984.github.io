@@ -105,6 +105,7 @@ body{background:#fff}
 .scene-card:nth-child(2){animation-delay:-2s}
 .scene-card:nth-child(3){animation-delay:-4s}
 .github-link{color:#0057ff;text-decoration:underline;text-underline-offset:4px}
+.contact-mail{font-size:.82rem!important;margin:0 0 28px!important}.contact-mail a{color:#0057ff;text-decoration:underline;text-underline-offset:4px}
 .scene-card img{transform-origin:center;animation:sceneDrive 6s ease-in-out infinite alternate;will-change:transform}
 .scene-card:nth-child(2) img{animation-duration:7s;animation-direction:alternate-reverse}
 .scene-card:nth-child(3) img{animation-duration:6.5s}
