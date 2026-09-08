@@ -148,4 +148,7 @@ html,body{max-width:100%;overflow-x:hidden}
 @media(max-width:760px){
   .hero h1,.section-head h2,.closing h2{font-size:clamp(2.35rem,11vw,3.3rem);max-width:100%}
   .hero h1 span,.hero h1 em,.section-head h2 span,.section-head h2 em,.closing h2 span,.closing h2 em{display:inline}
+  .hero h1,.section-head h2,.closing h2,.card h3{max-width:none;text-wrap:pretty;line-break:strict}
+  .card h3{max-width:none}
+  .lead,.card p,.protocol-step p,.quote-block p,.timeline p,.facts p,.closing>p:not(.eyebrow){text-wrap:pretty;line-break:strict}
 }
