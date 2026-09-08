@@ -19,7 +19,7 @@
 .strength-grid .card-accent{background:#ffd400;border-color:#ffd400;color:#111418;box-shadow:8px 8px 0 #ffeca0}
 .strength-grid .card-accent p{color:#111418}
 .strength-grid .card-accent .card-no,.strength-grid .card-accent b{color:#111418}
-.no-break{white-space:nowrap}
+.no-break{white-space:nowrap;display:inline-block}
 body,p,h1,h2,h3{word-break:normal;overflow-wrap:normal;line-break:strict}
 .closing>p:not(.eyebrow){text-wrap:pretty}
 @media(max-width:760px){
