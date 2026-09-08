@@ -122,6 +122,9 @@ body{background:#fff}
 @media(prefers-reduced-motion:reduce){.scene-card,.scene-card img,.scene-card:after{animation:none}}
 .scene-card:nth-child(3) img{animation:sceneDriveWide 4.6s ease-in-out infinite alternate;will-change:transform}
 
+/* Inline line-break anchors inside prose must keep the paragraph typography. */
+.protocol-step p .no-break,.quote-block p .no-break{font:inherit!important;letter-spacing:inherit!important;color:inherit!important;line-height:inherit;display:inline-block}
+
 /* Final palette and mobile rules intentionally come last to override legacy defaults. */
 .strength-grid .card-wide{background:#f04438;color:#fff;border-color:#f04438;box-shadow:8px 8px 0 #ffb3ad}
 .strength-grid .card-wide p,.strength-grid .card-wide .card-no,.strength-grid .card-wide b{color:#fff}
