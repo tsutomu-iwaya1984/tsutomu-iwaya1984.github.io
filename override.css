@@ -147,6 +147,11 @@ body{background:#fff}
 html,body{max-width:100%;overflow-x:hidden}
 .career-layout{display:block}
 .career-summary{width:min(940px,100%);max-width:940px;margin:0 auto}
+.approach-layout{display:block}
+.approach-summary{width:min(940px,100%);max-width:940px;margin:0 auto;border-left:3px solid var(--lime);padding:10px 0 10px 28px;font-size:1.2rem;line-height:1.9}
+.approach-summary p{margin:0;white-space:normal;text-wrap:normal;word-break:normal;overflow-wrap:normal;line-break:strict}
+.approach-summary span{display:block;margin-top:24px;font:500 .62rem var(--mono);color:#aeb6ba}
+@media(max-width:760px){.approach-summary{font-size:1rem;padding-left:20px}}
 .career-summary p{margin:0;line-height:2;white-space:normal;text-wrap:normal;word-break:normal;overflow-wrap:normal;line-break:strict}
 .card p,.gallery-note,.protocol-step p,.quote-block p,.closing>p:not(.eyebrow){text-indent:1em}
 .hero h1{max-width:760px;font-size:clamp(3rem,6vw,6.4rem);line-height:1.12}
