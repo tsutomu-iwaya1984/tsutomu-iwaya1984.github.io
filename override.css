@@ -200,3 +200,9 @@ html,body{max-width:100%;overflow-x:hidden}
     text-align: left;
   }
 }
+
+
+/* Keep the closing sentence ending together across viewport widths */
+.closing-final {
+  white-space: nowrap;
+}
