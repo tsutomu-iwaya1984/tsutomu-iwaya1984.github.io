@@ -173,3 +173,10 @@ html,body{max-width:100%;overflow-x:hidden}
   #strengths .section-head h2 em,.field-gallery .section-head h2 em,#career .section-head h2 em{white-space:nowrap}
   #approach .section-head h2>span:first-child{white-space:nowrap}
 }
+
+
+/* Keep closing prose visually even without centered line gaps. */
+.closing > p:not(.eyebrow) {
+  text-align: left;
+  text-wrap: normal;
+}
