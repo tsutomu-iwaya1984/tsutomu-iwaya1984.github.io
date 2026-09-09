@@ -206,3 +206,12 @@ html,body{max-width:100%;overflow-x:hidden}
 .closing-final {
   white-space: nowrap;
 }
+
+
+/* Keep the centered content block visually even: align prose from one edge. */
+.closing > p:not(.eyebrow) {
+  text-align: left;
+}
+.closing-final {
+  white-space: normal;
+}
