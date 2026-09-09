@@ -176,7 +176,7 @@ html,body{max-width:100%;overflow-x:hidden}
 
 /* White closing canvas with centered, balanced copy */
 .closing {
-  background: #fff !important;
+  background: #dff4ff !important;
   color: var(--ink, #0f1419) !important;
 }
 .closing h2,
