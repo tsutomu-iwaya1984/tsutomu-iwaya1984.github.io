@@ -180,3 +180,12 @@ html,body{max-width:100%;overflow-x:hidden}
   text-align: left;
   text-wrap: normal;
 }
+
+
+/* Center the closing prose block while keeping its line starts even. */
+.closing > p:not(.eyebrow) {
+  width: min(960px, 100%);
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
