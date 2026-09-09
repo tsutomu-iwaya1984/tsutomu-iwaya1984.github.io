@@ -189,3 +189,7 @@ html,body{max-width:100%;overflow-x:hidden}
   margin: 0 auto;
   text-align: left;
 }
+
+/* Stop all decorative motion so text and layout remain perfectly stable. */
+*,*::before,*::after{animation:none!important;transition:none!important}
+.reveal{opacity:1!important;transform:none!important}
