@@ -58,7 +58,7 @@ body{background:#fff}
 .dark-section .section-head{border-color:#d4ff32}
 .field-gallery .section-head{border-bottom:0}
 :root{--lime:#1677ff;--blue:#1677ff}
-.signal-divider{margin:0 5vw;border-top:1px solid var(--line)}
+.signal-divider{height:2px;margin:0 5vw;border-top:2px solid #111418}
 .hero-image,.scene-card img{filter:saturate(1.05) contrast(1.04)}
 .scene-card{box-shadow:12px 12px 0 #1677ff}
 .closing{background:#dff4ff}
