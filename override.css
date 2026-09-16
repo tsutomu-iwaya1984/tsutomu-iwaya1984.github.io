@@ -102,7 +102,7 @@ body{background:#fff}
 @media(max-width:760px){.scene-card:nth-child(1){box-shadow:8px 8px 0 #ff8a65}.scene-card:nth-child(2){box-shadow:8px 8px 0 #1677ff}.scene-card:nth-child(3){box-shadow:8px 8px 0 #7c5cff}}
 .lead{max-width:760px;text-wrap:pretty}
 .card h3{max-width:14ch;text-wrap:balance}
-.strength-grid .card h3{max-width:100%;text-wrap:pretty;line-break:strict;overflow-wrap:anywhere}
+.strength-grid .card h3{max-width:100%;font-size:1.35rem;text-wrap:pretty;line-break:strict;overflow-wrap:anywhere}
 .hero h1 span,.hero h1 em{display:inline-block;white-space:nowrap}
 .section-head h2 span,.section-head h2 em,.closing h2 span,.closing h2 em{display:inline-block;white-space:nowrap}
 .scene-card{position:relative;overflow:hidden;animation:sceneFloat 6s ease-in-out infinite}
