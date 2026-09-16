@@ -146,6 +146,8 @@ body{background:#fff}
 
 /* Keep oversized Japanese headings inside the viewport at desktop and tablet widths. */
 html,body{max-width:100%;overflow-x:hidden}
+.lead,.card p,.gallery-note,.approach-summary p,.career-summary p,.closing>p:not(.eyebrow){text-wrap:pretty;line-break:strict;overflow-wrap:normal}
+.card h3{line-break:strict;overflow-wrap:normal}
 .career-layout{display:block}
 .career-summary{width:min(940px,100%);max-width:940px;margin:0 auto}
 .approach-layout{display:block}
