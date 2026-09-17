@@ -13,6 +13,15 @@
 .strength-grid .card-wide{background:#f04438;border-color:#f04438;color:#fff;box-shadow:8px 8px 0 #ffb3ad}
 .strength-grid .card-wide p{color:#fff}
 
+
+/* Visible technical pattern layer */
+.hero,#strengths,#career,#contact{background-image:repeating-linear-gradient(135deg,rgba(22,119,255,.055) 0 1px,transparent 1px 20px),radial-gradient(circle at 88% 12%,transparent 0 90px,rgba(22,119,255,.11) 91px 93px,transparent 94px 150px,rgba(22,119,255,.07) 151px 153px,transparent 154px)}
+.field-gallery{background-image:repeating-linear-gradient(135deg,rgba(22,119,255,.07) 0 1px,transparent 1px 18px),radial-gradient(circle at 12% 88%,transparent 0 100px,rgba(22,119,255,.12) 101px 103px,transparent 104px 170px)}
+#strengths{background-position:center,right 8% top 6%}
+.field-gallery{background-position:center,left 8% bottom 6%}
+#career{background-position:center,left 85% top 12%}
+#contact{background-position:center,right 10% bottom 8%}
+
 /* Technical contour background pattern */
 .hero,#strengths,.field-gallery,#career,#contact,.dark-section{position:relative;isolation:isolate;background-repeat:no-repeat}
 .hero::before,#strengths::before,.field-gallery::before,#career::before,#contact::before,.dark-section::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.62;background-repeat:no-repeat}
