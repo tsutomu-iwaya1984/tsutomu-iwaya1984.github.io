@@ -230,7 +230,13 @@ body{background:#f6f9fb}
 .field-gallery::before,
 #career::before,
 #contact::before,
-.dark-section::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.46;background-repeat:no-repeat}
+.dark-section::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.62;background-repeat:no-repeat}
+.hero > *,
+#strengths > *,
+.field-gallery > *,
+#career > *,
+#contact > *,
+.dark-section > *{position:relative;z-index:1}
 .hero::before{background-image:radial-gradient(circle at 78% 18%,transparent 0 82px,rgba(22,119,255,.14) 83px 84px,transparent 85px 138px,rgba(22,119,255,.1) 139px 140px,transparent 141px 198px,rgba(22,119,255,.07) 199px 200px,transparent 201px),repeating-linear-gradient(135deg,rgba(22,119,255,.065) 0 1px,transparent 1px 18px);background-position:right 9% top 8%,right top}
 #strengths::before{background-image:radial-gradient(circle at 8% 86%,transparent 0 95px,rgba(22,119,255,.11) 96px 97px,transparent 98px 154px,rgba(22,119,255,.07) 155px 156px,transparent 157px),repeating-linear-gradient(135deg,rgba(22,119,255,.035) 0 1px,transparent 1px 22px)}
 .field-gallery::before{background-image:radial-gradient(circle at 88% 16%,transparent 0 74px,rgba(22,119,255,.12) 75px 76px,transparent 77px 126px,rgba(22,119,255,.08) 127px 128px,transparent 129px),repeating-linear-gradient(135deg,rgba(22,119,255,.05) 0 1px,transparent 1px 20px)}
