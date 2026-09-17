@@ -217,3 +217,24 @@ body{background:#f6f9fb}
 .scene-card:nth-child(3){box-shadow:12px 12px 0 #b9cbe0}
 .scene-card:nth-child(4){box-shadow:12px 12px 0 #a8c95b}
 @media(max-width:760px){.scene-card:nth-child(1),.scene-card:nth-child(2),.scene-card:nth-child(3),.scene-card:nth-child(4){box-shadow:8px 8px 0 #9dcfe3}}
+
+/* Subtle technical contour pattern: adds depth without changing the existing palette. */
+.hero,
+#strengths,
+.field-gallery,
+#career,
+#contact,
+.dark-section{position:relative;isolation:isolate;background-repeat:no-repeat}
+.hero::before,
+#strengths::before,
+.field-gallery::before,
+#career::before,
+#contact::before,
+.dark-section::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.46;background-repeat:no-repeat}
+.hero::before{background-image:radial-gradient(circle at 78% 18%,transparent 0 82px,rgba(22,119,255,.14) 83px 84px,transparent 85px 138px,rgba(22,119,255,.1) 139px 140px,transparent 141px 198px,rgba(22,119,255,.07) 199px 200px,transparent 201px),repeating-linear-gradient(135deg,rgba(22,119,255,.065) 0 1px,transparent 1px 18px);background-position:right 9% top 8%,right top}
+#strengths::before{background-image:radial-gradient(circle at 8% 86%,transparent 0 95px,rgba(22,119,255,.11) 96px 97px,transparent 98px 154px,rgba(22,119,255,.07) 155px 156px,transparent 157px),repeating-linear-gradient(135deg,rgba(22,119,255,.035) 0 1px,transparent 1px 22px)}
+.field-gallery::before{background-image:radial-gradient(circle at 88% 16%,transparent 0 74px,rgba(22,119,255,.12) 75px 76px,transparent 77px 126px,rgba(22,119,255,.08) 127px 128px,transparent 129px),repeating-linear-gradient(135deg,rgba(22,119,255,.05) 0 1px,transparent 1px 20px)}
+#career::before{background-image:repeating-linear-gradient(135deg,rgba(22,119,255,.045) 0 1px,transparent 1px 24px),radial-gradient(circle at 15% 20%,transparent 0 64px,rgba(22,119,255,.08) 65px 66px,transparent 67px 116px)}
+#contact::before{background-image:radial-gradient(circle at 90% 85%,transparent 0 92px,rgba(22,119,255,.1) 93px 94px,transparent 95px 150px,rgba(22,119,255,.06) 151px 152px,transparent 153px),repeating-linear-gradient(135deg,rgba(22,119,255,.035) 0 1px,transparent 1px 22px)}
+.dark-section::before{background-image:radial-gradient(circle at 80% 18%,transparent 0 80px,rgba(141,216,245,.18) 81px 82px,transparent 83px 138px,rgba(141,216,245,.11) 139px 140px,transparent 141px),repeating-linear-gradient(135deg,rgba(141,216,245,.06) 0 1px,transparent 1px 18px)}
+@media(max-width:760px){.hero::before,.field-gallery::before,.dark-section::before{opacity:.3;background-size:auto 70%,auto}.hero::before{background-position:right -110px top 4%,right top}.field-gallery::before{background-position:right -80px top 4%,right top}}
