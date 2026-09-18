@@ -323,3 +323,8 @@ body{background:#fff;background-image:linear-gradient(116deg,transparent 0 12%,r
 .strength-grid .card-wide{background:#f04438!important;color:#fff!important;border-color:#f04438!important;box-shadow:8px 8px 0 #ffb3ad!important}
 .strength-grid .card:nth-child(2){background:#0057ff!important;color:#fff!important;border-color:#0057ff!important;box-shadow:8px 8px 0 #8aaeff!important}
 .strength-grid .card-accent{background:#ffd400!important;color:#111418!important;border-color:#ffd400!important;box-shadow:8px 8px 0 #ffeca0!important}
+/* Final rollback: remove every background pattern. */
+body{background:#fff!important;background-image:none!important}
+.hero,#strengths,.field-gallery,#career,#contact{background-image:none!important}
+.dark-section{background-image:none!important;background-color:#111418!important}
+.hero::before,#strengths::before,.field-gallery::before,#career::before,#contact::before,.dark-section::before{display:none!important;background-image:none!important}
