@@ -198,6 +198,14 @@ html,body{max-width:100%;overflow-x:hidden}
 /* Keep copy stable while preserving image, gallery, and hover motion. */
 .scene-card{animation:none!important}
 
+/* Original technical background: fine grid, offset blocks, and a restrained blue glow. */
+body{background:#15191f;background-image:linear-gradient(rgba(22,119,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(22,119,255,.09) 1px,transparent 1px),radial-gradient(ellipse at 18% 8%,rgba(22,119,255,.18),transparent 34%),radial-gradient(ellipse at 84% 92%,rgba(22,119,255,.12),transparent 32%);background-attachment:fixed;background-size:36px 36px,36px 36px,100% 100%,100% 100%}
+.hero,#strengths,.field-gallery,#career,#contact{background-color:rgba(246,249,251,.97);background-image:linear-gradient(90deg,transparent 0 14%,rgba(22,119,255,.08) 14% 14.15%,transparent 14.15% 100%),linear-gradient(rgba(22,119,255,.045) 1px,transparent 1px);background-size:auto,100% 32px}
+.field-gallery{background-color:#eaf0f5;background-image:linear-gradient(90deg,transparent 0 82%,rgba(22,119,255,.12) 82% 82.2%,transparent 82.2% 100%),linear-gradient(rgba(22,119,255,.06) 1px,transparent 1px);background-size:auto,100% 34px}
+.dark-section{background-color:#171b22;background-image:linear-gradient(90deg,transparent 0 18%,rgba(22,119,255,.15) 18% 18.2%,transparent 18.2% 100%),linear-gradient(rgba(22,119,255,.10) 1px,transparent 1px),linear-gradient(135deg,transparent 0 48%,rgba(22,119,255,.10) 48% 48.2%,transparent 48.2% 100%);background-size:auto,100% 34px,100% 100%}
+.dark-section h2 em,.dark-section h2 .phrase-lock,.dark-section .phrase-lock{color:#1677ff!important}
+.dark-section::before{background-image:radial-gradient(circle at 52% 0%,transparent 0 120px,rgba(22,119,255,.30) 121px 124px,transparent 125px 195px,rgba(22,119,255,.20) 196px 199px,transparent 200px 275px,rgba(22,119,255,.12) 276px 279px,transparent 280px),repeating-linear-gradient(135deg,rgba(22,119,255,.12) 0 2px,transparent 2px 24px)}
+
 /* White / black / light-blue background system, informed by the reference but not copied. */
 :root{--paper:#f6f9fb;--ink:#101820;--line:#c6d4dc;--lime:#9dd8f2;--blue:#9dd8f2}
 body{background:#f6f9fb}
