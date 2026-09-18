@@ -119,6 +119,13 @@ body{background:#fff}
 .scene-card:nth-child(2) figcaption span,.scene-card:nth-child(2) figcaption small{color:#8dd8f5}
 .scene-card:nth-child(3) figcaption span,.scene-card:nth-child(3) figcaption small{color:#b9a7ff}
 .scene-card:nth-child(1){box-shadow:12px 12px 0 #ff8a65}
+
+/* Turing-inspired contour background: charcoal field, burgundy arcs, diagonal technical lines */
+body{background:#151515;background-image:repeating-linear-gradient(135deg,rgba(176,0,48,.16) 0 2px,transparent 2px 24px),radial-gradient(circle at 50% -18%,transparent 0 110px,rgba(176,0,48,.24) 111px 114px,transparent 115px 175px,rgba(176,0,48,.18) 176px 179px,transparent 180px 245px,rgba(176,0,48,.12) 246px 249px,transparent 250px);background-attachment:fixed;background-size:auto,100% 640px;background-repeat:repeat,no-repeat}
+.hero,#strengths,.field-gallery,#career,#contact{background-color:rgba(246,249,251,.96);background-image:repeating-linear-gradient(135deg,rgba(176,0,48,.10) 0 1px,transparent 1px 28px),radial-gradient(circle at 86% 8%,transparent 0 90px,rgba(176,0,48,.19) 91px 94px,transparent 95px 150px,rgba(176,0,48,.12) 151px 154px,transparent 155px 220px);background-repeat:repeat,no-repeat;background-position:center,right 8% top 4%}
+.field-gallery{background-color:#eaf0f5;background-image:repeating-linear-gradient(135deg,rgba(176,0,48,.13) 0 1px,transparent 1px 24px),radial-gradient(circle at 12% 88%,transparent 0 100px,rgba(176,0,48,.21) 101px 104px,transparent 105px 175px,rgba(176,0,48,.13) 176px 179px,transparent 180px);background-position:center,left 8% bottom 4%}
+.dark-section{background-color:#171515;background-image:repeating-linear-gradient(135deg,rgba(176,0,48,.2) 0 2px,transparent 2px 24px),radial-gradient(circle at 52% 0%,transparent 0 120px,rgba(176,0,48,.3) 121px 124px,transparent 125px 195px,rgba(176,0,48,.2) 196px 199px,transparent 200px 275px,rgba(176,0,48,.12) 276px 279px,transparent 280px);background-repeat:repeat,no-repeat;background-position:center,center top}
+
 .scene-card:nth-child(2){box-shadow:12px 12px 0 #1677ff}
 .scene-card:nth-child(3){box-shadow:12px 12px 0 #7c5cff}
 @media(max-width:760px){.scene-card:nth-child(1){box-shadow:8px 8px 0 #ff8a65}.scene-card:nth-child(2){box-shadow:8px 8px 0 #1677ff}.scene-card:nth-child(3){box-shadow:8px 8px 0 #7c5cff}}
