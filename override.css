@@ -12,6 +12,28 @@
 /* Primary-color contrast palette: red / blue / yellow */
 .strength-grid .card-wide{background:#f04438;border-color:#f04438;color:#fff;box-shadow:8px 8px 0 #ffb3ad}
 .strength-grid .card-wide p{color:#fff}
+
+
+/* Visible technical pattern layer */
+.hero,#strengths,#career,#contact{background-image:repeating-linear-gradient(135deg,rgba(22,119,255,.055) 0 1px,transparent 1px 20px),radial-gradient(circle at 88% 12%,transparent 0 90px,rgba(22,119,255,.11) 91px 93px,transparent 94px 150px,rgba(22,119,255,.07) 151px 153px,transparent 154px)}
+.field-gallery{background-image:repeating-linear-gradient(135deg,rgba(22,119,255,.07) 0 1px,transparent 1px 18px),radial-gradient(circle at 12% 88%,transparent 0 100px,rgba(22,119,255,.12) 101px 103px,transparent 104px 170px)}
+#strengths{background-position:center,right 8% top 6%}
+.field-gallery{background-position:center,left 8% bottom 6%}
+#career{background-position:center,left 85% top 12%}
+#contact{background-position:center,right 10% bottom 8%}
+
+/* Technical contour background pattern */
+.hero,#strengths,.field-gallery,#career,#contact,.dark-section{position:relative;isolation:isolate;background-repeat:no-repeat}
+.hero::before,#strengths::before,.field-gallery::before,#career::before,#contact::before,.dark-section::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.62;background-repeat:no-repeat}
+.hero>*,#strengths>*,.field-gallery>*,#career>*,#contact>*,.dark-section>*{position:relative;z-index:1}
+.hero::before{background-image:radial-gradient(circle at 78% 18%,transparent 0 82px,rgba(22,119,255,.18) 83px 84px,transparent 85px 138px,rgba(22,119,255,.12) 139px 140px,transparent 141px 198px,rgba(22,119,255,.08) 199px 200px,transparent 201px),repeating-linear-gradient(135deg,rgba(22,119,255,.09) 0 1px,transparent 1px 18px);background-position:right 9% top 8%,right top}
+#strengths::before{background-image:radial-gradient(circle at 8% 86%,transparent 0 95px,rgba(22,119,255,.14) 96px 97px,transparent 98px 154px,rgba(22,119,255,.09) 155px 156px,transparent 157px),repeating-linear-gradient(135deg,rgba(22,119,255,.05) 0 1px,transparent 1px 22px)}
+.field-gallery::before{background-image:radial-gradient(circle at 88% 16%,transparent 0 74px,rgba(22,119,255,.15) 75px 76px,transparent 77px 126px,rgba(22,119,255,.1) 127px 128px,transparent 129px),repeating-linear-gradient(135deg,rgba(22,119,255,.07) 0 1px,transparent 1px 20px)}
+#career::before{background-image:repeating-linear-gradient(135deg,rgba(22,119,255,.06) 0 1px,transparent 1px 24px),radial-gradient(circle at 15% 20%,transparent 0 64px,rgba(22,119,255,.1) 65px 66px,transparent 67px 116px)}
+#contact::before{background-image:radial-gradient(circle at 90% 85%,transparent 0 92px,rgba(22,119,255,.13) 93px 94px,transparent 95px 150px,rgba(22,119,255,.08) 151px 152px,transparent 153px),repeating-linear-gradient(135deg,rgba(22,119,255,.05) 0 1px,transparent 1px 22px)}
+.dark-section::before{background-image:radial-gradient(circle at 80% 18%,transparent 0 80px,rgba(141,216,245,.2) 81px 82px,transparent 83px 138px,rgba(141,216,245,.12) 139px 140px,transparent 141px),repeating-linear-gradient(135deg,rgba(141,216,245,.08) 0 1px,transparent 1px 18px)}
+@media(max-width:760px){.hero::before,.field-gallery::before,.dark-section::before{opacity:.38;background-size:auto 70%,auto}.hero::before{background-position:right -110px top 4%,right top}.field-gallery::before{background-position:right -80px top 4%,right top}}
+
 .strength-grid .card-wide .card-no,.strength-grid .card-wide b{color:#fff}
 .strength-grid .card:nth-child(2){background:#0057ff;border-color:#0057ff;color:#fff;box-shadow:8px 8px 0 #8aaeff}
 .strength-grid .card:nth-child(2) p{color:#fff}
@@ -97,6 +119,13 @@ body{background:#fff}
 .scene-card:nth-child(2) figcaption span,.scene-card:nth-child(2) figcaption small{color:#8dd8f5}
 .scene-card:nth-child(3) figcaption span,.scene-card:nth-child(3) figcaption small{color:#b9a7ff}
 .scene-card:nth-child(1){box-shadow:12px 12px 0 #ff8a65}
+
+/* Turing-inspired contour background: charcoal field, burgundy arcs, diagonal technical lines */
+body{background:#151515;background-image:repeating-linear-gradient(135deg,rgba(176,0,48,.16) 0 2px,transparent 2px 24px),radial-gradient(circle at 50% -18%,transparent 0 110px,rgba(176,0,48,.24) 111px 114px,transparent 115px 175px,rgba(176,0,48,.18) 176px 179px,transparent 180px 245px,rgba(176,0,48,.12) 246px 249px,transparent 250px);background-attachment:fixed;background-size:auto,100% 640px;background-repeat:repeat,no-repeat}
+.hero,#strengths,.field-gallery,#career,#contact{background-color:rgba(246,249,251,.96);background-image:repeating-linear-gradient(135deg,rgba(176,0,48,.10) 0 1px,transparent 1px 28px),radial-gradient(circle at 86% 8%,transparent 0 90px,rgba(176,0,48,.19) 91px 94px,transparent 95px 150px,rgba(176,0,48,.12) 151px 154px,transparent 155px 220px);background-repeat:repeat,no-repeat;background-position:center,right 8% top 4%}
+.field-gallery{background-color:#eaf0f5;background-image:repeating-linear-gradient(135deg,rgba(176,0,48,.13) 0 1px,transparent 1px 24px),radial-gradient(circle at 12% 88%,transparent 0 100px,rgba(176,0,48,.21) 101px 104px,transparent 105px 175px,rgba(176,0,48,.13) 176px 179px,transparent 180px);background-position:center,left 8% bottom 4%}
+.dark-section{background-color:#171515;background-image:repeating-linear-gradient(135deg,rgba(176,0,48,.2) 0 2px,transparent 2px 24px),radial-gradient(circle at 52% 0%,transparent 0 120px,rgba(176,0,48,.3) 121px 124px,transparent 125px 195px,rgba(176,0,48,.2) 196px 199px,transparent 200px 275px,rgba(176,0,48,.12) 276px 279px,transparent 280px);background-repeat:repeat,no-repeat;background-position:center,center top}
+
 .scene-card:nth-child(2){box-shadow:12px 12px 0 #1677ff}
 .scene-card:nth-child(3){box-shadow:12px 12px 0 #7c5cff}
 @media(max-width:760px){.scene-card:nth-child(1){box-shadow:8px 8px 0 #ff8a65}.scene-card:nth-child(2){box-shadow:8px 8px 0 #1677ff}.scene-card:nth-child(3){box-shadow:8px 8px 0 #7c5cff}}
