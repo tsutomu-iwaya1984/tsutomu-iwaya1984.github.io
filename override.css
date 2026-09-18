@@ -198,6 +198,17 @@ html,body{max-width:100%;overflow-x:hidden}
 /* Keep copy stable while preserving image, gallery, and hover motion. */
 .scene-card{animation:none!important}
 
+/* Restore the original primary-color direction: red, blue, yellow, white, and charcoal. */
+body{background:#fff;background-image:linear-gradient(116deg,transparent 0 12%,rgba(240,68,56,.12) 12.2% 15%,transparent 15.2% 68%,rgba(0,87,255,.10) 68.2% 71%,transparent 71.2%),linear-gradient(28deg,transparent 0 76%,rgba(255,212,0,.14) 76.2% 80%,transparent 80.2%);background-attachment:fixed;background-size:100% 100%}
+.hero,#strengths,.field-gallery,#career,#contact{background-color:#fff;background-image:linear-gradient(90deg,transparent 0 12%,rgba(240,68,56,.08) 12.2% 12.8%,transparent 13% 100%),repeating-linear-gradient(0deg,transparent 0 42px,rgba(0,87,255,.035) 42px 44px);background-size:100% 100%}
+.field-gallery{background-color:#f6f7f5;background-image:linear-gradient(112deg,transparent 0 18%,rgba(0,87,255,.12) 18.2% 22%,transparent 22.2% 70%,rgba(255,212,0,.18) 70.2% 76%,transparent 76.2%),repeating-linear-gradient(90deg,transparent 0 56px,rgba(240,68,56,.06) 56px 58px,transparent 58px 112px)}
+.dark-section{background-color:#111418;background-image:linear-gradient(145deg,transparent 0 28%,rgba(0,87,255,.28) 28.2% 33%,transparent 33.2% 65%,rgba(240,68,56,.24) 65.2% 70%,transparent 70.2%),linear-gradient(24deg,transparent 0 72%,rgba(255,212,0,.22) 72.2% 77%,transparent 77.2%)}
+.dark-section h2 em,.dark-section h2 .phrase-lock,.dark-section .phrase-lock{color:#1677ff!important;text-shadow:none}
+.dark-section::before{opacity:.72;background-image:repeating-linear-gradient(135deg,rgba(0,87,255,.12) 0 3px,transparent 3px 28px),radial-gradient(circle at 78% 20%,rgba(240,68,56,.5) 0 4px,transparent 5px 74px,rgba(255,212,0,.3) 75px 78px,transparent 79px)}
+.strength-grid .card-wide{background:#f04438!important;color:#fff!important;border-color:#f04438!important;box-shadow:8px 8px 0 #ffb3ad!important}
+.strength-grid .card:nth-child(2){background:#0057ff!important;color:#fff!important;border-color:#0057ff!important;box-shadow:8px 8px 0 #8aaeff!important}
+.strength-grid .card-accent{background:#ffd400!important;color:#111418!important;border-color:#ffd400!important;box-shadow:8px 8px 0 #ffeca0!important}
+
 /* High-impact blue signal field: deliberately bold and asymmetrical. */
 body{background-color:#050b14;background-image:linear-gradient(118deg,transparent 0 9%,rgba(0,87,255,.42) 9.2% 13%,transparent 13.2% 29%,rgba(22,119,255,.22) 29.2% 30%,transparent 30.2% 66%,rgba(0,87,255,.35) 66.2% 71%,transparent 71.2%),radial-gradient(circle at 16% 22%,#1677ff 0 3px,transparent 4px 42px,#1677ff 43px 45px,transparent 46px 110px),radial-gradient(circle at 84% 76%,rgba(22,119,255,.9) 0 4px,transparent 5px 58px,rgba(22,119,255,.55) 59px 62px,transparent 63px 150px),repeating-linear-gradient(90deg,transparent 0 72px,rgba(22,119,255,.18) 72px 75px,transparent 75px 144px);background-size:100% 100%,280px 280px,360px 360px,100% 100%;background-attachment:fixed}
 .hero,#strengths,.field-gallery,#career,#contact{background-color:rgba(241,247,255,.94);background-image:linear-gradient(112deg,transparent 0 15%,rgba(22,119,255,.26) 15.2% 17%,transparent 17.2% 54%,rgba(0,87,255,.17) 54.2% 57%,transparent 57.2%),repeating-linear-gradient(0deg,transparent 0 28px,rgba(22,119,255,.10) 28px 30px),radial-gradient(ellipse at 100% 0%,rgba(22,119,255,.28),transparent 46%);background-size:100% 100%,100% 100%,100% 100%}
