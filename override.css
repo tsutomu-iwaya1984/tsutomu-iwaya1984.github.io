@@ -244,6 +244,14 @@ body{background:#fff!important;background-image:none!important}
 .dark-section{background-image:none!important;background-color:#111418!important}
 .hero::before,#strengths::before,.field-gallery::before,#career::before,#contact::before,.dark-section::before{display:none!important;background-image:none!important}
 
+/* Refined signal palette: coral red, royal blue, and amber gold. */
+.strength-grid .card-wide{background:#e85d5a!important;border-color:#e85d5a!important;box-shadow:8px 8px 0 #f3b2ae!important}
+.strength-grid .card:nth-child(2){background:#356ae6!important;border-color:#356ae6!important;box-shadow:8px 8px 0 #a9bff4!important}
+.strength-grid .card-accent{background:#edb83f!important;border-color:#edb83f!important;box-shadow:8px 8px 0 #f6dda1!important}
+.strength-grid .card-wide p,.strength-grid .card-wide .card-no,.strength-grid .card-wide b{color:#fff!important}
+.strength-grid .card:nth-child(2) p,.strength-grid .card:nth-child(2) .card-no{color:#fff!important}
+.strength-grid .card-accent p,.strength-grid .card-accent .card-no,.strength-grid .card-accent b{color:#17202a!important}
+
 /* Roll back background patterns only; retain content and primary-color cards. */
 body{background:#fff!important;background-image:none!important}
 .hero,#strengths,.field-gallery,#career,#contact{background-image:none!important}
