@@ -357,3 +357,4 @@ body{background:#fff!important;background-image:none!important}
 .strength-grid .card h3{color:#f4f7fb!important}
 .strength-grid .card h3 br{display:none}
 .strength-grid .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(10,18,30,.18)!important}
+.scene-card:nth-child(4) figcaption span,.scene-card:nth-child(4) figcaption small{color:#d4ff32!important}
