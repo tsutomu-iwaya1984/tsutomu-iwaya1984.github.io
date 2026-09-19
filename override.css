@@ -344,7 +344,7 @@ body{background:#fff!important;background-image:none!important}
 .hero,#strengths,.field-gallery,#career,#contact{background-image:none!important}
 .dark-section{background-image:none!important;background-color:#111418!important}
 .hero::before,#strengths::before,.field-gallery::before,#career::before,#contact::before,.dark-section::before{display:none!important;background-image:none!important}
-/* Final signal palette: distinct, elegant, and clearly separated. */
-.strength-grid .card-wide{background:#c92f4a!important;color:#fff!important;border-color:#c92f4a!important;box-shadow:8px 8px 0 #ef9aaa!important}
-.strength-grid .card:nth-child(2){background:#2347c6!important;color:#fff!important;border-color:#2347c6!important;box-shadow:8px 8px 0 #91a7ee!important}
-.strength-grid .card-accent{background:#d99a1e!important;color:#111418!important;border-color:#d99a1e!important;box-shadow:8px 8px 0 #f0d18a!important}
+/* Final future palette: ultraviolet, electric cyan, and neon green. */
+.strength-grid .card-wide{background:#7438d5!important;color:#fff!important;border-color:#7438d5!important;box-shadow:8px 8px 0 #c4a9f2!important}
+.strength-grid .card:nth-child(2){background:#00aebe!important;color:#fff!important;border-color:#00aebe!important;box-shadow:8px 8px 0 #8de7ea!important}
+.strength-grid .card-accent{background:#a7c918!important;color:#111418!important;border-color:#a7c918!important;box-shadow:8px 8px 0 #d9ea8b!important}
