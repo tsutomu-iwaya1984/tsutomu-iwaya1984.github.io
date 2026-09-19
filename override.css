@@ -344,7 +344,7 @@ body{background:#fff!important;background-image:none!important}
 .hero,#strengths,.field-gallery,#career,#contact{background-image:none!important}
 .dark-section{background-image:none!important;background-color:#111418!important}
 .hero::before,#strengths::before,.field-gallery::before,#career::before,#contact::before,.dark-section::before{display:none!important;background-image:none!important}
-/* Final future palette: fuchsia, electric cyan, and neon green. */
+/* Final future palette: fuchsia, electric cyan, and graphite. */
 .strength-grid .card-wide{background:#e83e9f!important;color:#fff!important;border-color:#e83e9f!important;box-shadow:8px 8px 0 #f3a8d1!important}
 .strength-grid .card:nth-child(2){background:#00aebe!important;color:#fff!important;border-color:#00aebe!important;box-shadow:8px 8px 0 #8de7ea!important}
-.strength-grid .card-accent{background:#63cf72!important;color:#111418!important;border-color:#63cf72!important;box-shadow:8px 8px 0 #b5e9b9!important}
+.strength-grid .card-accent{background:#263449!important;color:#fff!important;border-color:#263449!important;box-shadow:8px 8px 0 #71839b!important}
