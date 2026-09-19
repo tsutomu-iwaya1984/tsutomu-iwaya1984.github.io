@@ -367,3 +367,9 @@ body{background:#fff!important;background-image:none!important}
 #career .career-summary p{color:#3f474d!important}
 @media(max-width:760px){#career{padding:78px 5vw 68px!important}#career .career-summary{padding-left:20px}}
 .closing{background:#ece9e2!important}
+/* Unified rule system: every structural divider uses the portfolio blue. */
+.section-head{border-bottom-color:#1677ff!important}
+.dark-section .section-head{border-color:#1677ff!important}
+.signal-divider{border-top-color:#1677ff!important}
+.protocol-step,.timeline>div{border-top-color:rgba(22,119,255,.72)!important}
+.approach-summary,.quote-block,.career-summary{border-left-color:#1677ff!important}
