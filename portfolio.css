@@ -20,3 +20,4 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 .scene-card:nth-child(3):hover{transform:translateY(-16px)!important}
 .section-head h2,.closing h2{font-size:clamp(2.8rem,4.2vw,5rem);line-height:1.12;letter-spacing:-.07em}.closing h2{border-bottom:2px solid var(--ink);padding-bottom:26px}
 @media(max-width:760px){.section-head h2,.closing h2{font-size:clamp(2.2rem,9vw,3rem)}.closing h2{padding-bottom:20px}}
+.section-head h2 span,.section-head h2 em,.closing h2 span,.closing h2 em{display:block}.scene-card figcaption strong{white-space:nowrap}
