@@ -344,7 +344,16 @@ body{background:#fff!important;background-image:none!important}
 .hero,#strengths,.field-gallery,#career,#contact{background-image:none!important}
 .dark-section{background-image:none!important;background-color:#111418!important}
 .hero::before,#strengths::before,.field-gallery::before,#career::before,#contact::before,.dark-section::before{display:none!important;background-image:none!important}
-/* Final future palette: graphite, electric cyan, and ice platinum. */
-.strength-grid .card-wide{background:#152238!important;color:#f4f8fc!important;border-color:#152238!important;box-shadow:8px 8px 0 #536b87!important}
-.strength-grid .card:nth-child(2){background:#079db2!important;color:#f7feff!important;border-color:#079db2!important;box-shadow:8px 8px 0 #8bdbe3!important}
-.strength-grid .card-accent{background:#dce7f0!important;color:#152238!important;border-color:#dce7f0!important;box-shadow:8px 8px 0 #aabccc!important}
+/* Final card system: one dark surface with restrained technical accents. */
+.strength-grid{gap:24px}
+.strength-grid .card-wide,.strength-grid .card:nth-child(2),.strength-grid .card-accent{position:relative;background:#151d29!important;color:#f4f7fb!important;border:1px solid #344357!important;box-shadow:0 8px 24px rgba(10,18,30,.12)!important}
+.strength-grid .card-wide{border-top:4px solid #4dd9e5!important}
+.strength-grid .card:nth-child(2){border-top:4px solid #d77bc7!important}
+.strength-grid .card-accent{border-top:4px solid #aab8c8!important}
+.strength-grid .card-wide p,.strength-grid .card:nth-child(2) p,.strength-grid .card-accent p{color:#d7e0e9!important}
+.strength-grid .card-wide .card-no,.strength-grid .card-wide b{color:#4dd9e5!important}
+.strength-grid .card:nth-child(2) .card-no{color:#d77bc7!important}
+.strength-grid .card-accent .card-no{color:#aab8c8!important}
+.strength-grid .card h3{color:#f4f7fb!important}
+.strength-grid .card h3 br{display:none}
+.strength-grid .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(10,18,30,.18)!important}
