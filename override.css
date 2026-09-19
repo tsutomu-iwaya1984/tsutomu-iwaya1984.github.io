@@ -358,9 +358,11 @@ body{background:#fff!important;background-image:none!important}
 .strength-grid .card h3 br{display:none}
 .strength-grid .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(10,18,30,.18)!important}
 .scene-card:nth-child(4) figcaption span,.scene-card:nth-child(4) figcaption small{color:#d4ff32!important}
-#career{background:#edf4f7!important;padding:112px 5vw 92px!important}
-#career .section-head{border-color:#152238!important}
-#career .section-head .eyebrow{color:#486070!important}
-#career .section-head h2 em{color:#147fa5!important}
-#career .career-summary{border-left:3px solid #18a9bc;padding-left:28px}
+#career{background:#151d29!important;color:#f4f7fb!important;padding:112px 5vw 92px!important}
+#career .section-head{border-color:#344357!important}
+#career .section-head .eyebrow{color:#aab8c8!important}
+#career .section-head h2{color:#f4f7fb!important}
+#career .section-head h2 em{color:#4dd9e5!important}
+#career .career-summary{border-left:3px solid #4dd9e5;padding-left:28px}
+#career .career-summary p{color:#d7e0e9!important}
 @media(max-width:760px){#career{padding:78px 5vw 68px!important}#career .career-summary{padding-left:20px}}
