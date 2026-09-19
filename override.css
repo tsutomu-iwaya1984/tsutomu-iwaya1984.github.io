@@ -380,3 +380,6 @@ body{background:#fff!important;background-image:none!important}
 .signal-divider{border-top-color:#9fe6ee!important}
 #career .section-head{border-color:#171b20!important}
 #career .career-summary{border-left-color:#171b20!important}
+/* Remove vertical rules; let typography and horizontal rhythm define the sections. */
+.approach-summary,.quote-block,.career-summary{border-left:0!important;padding-left:0!important}
+@media(max-width:760px){.approach-summary,.quote-block,.career-summary{padding-left:0!important}}
