@@ -43,3 +43,8 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
   .closing>h2{margin-top:20px}
   .closing>p:not(.eyebrow){max-width:920px}
 }
+
+/* Paragraphs start on the same centered rail and x-position as their heading. */
+.approach-layout,.career-layout{display:block;width:100%;max-width:920px;margin:0 auto}
+.dark-section .approach-summary,#career .career-summary{width:100%;max-width:none;margin:0}
+.approach-summary p,.career-summary p,.closing>p:not(.eyebrow){text-indent:0}
