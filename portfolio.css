@@ -51,3 +51,5 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 #strengths .section-head{border-bottom:0}
 .scene-card:nth-child(4) figcaption span{color:var(--cyan)}
 #career .career-layout{padding-top:36px}
+.hero h1{font-size:clamp(2.5rem,3vw,3.8rem);line-height:1.16}
+@media(max-width:760px){.hero h1{font-size:clamp(2.2rem,9vw,3.1rem);line-height:1.14}}
