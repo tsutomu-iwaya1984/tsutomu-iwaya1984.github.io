@@ -16,12 +16,12 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 .strength-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-areas:none;align-items:stretch}.strength-grid .card,.strength-grid .card-wide,.strength-grid .card:nth-child(2),.strength-grid .card-accent{grid-area:auto;min-height:500px;height:auto}.strength-grid .card p{max-width:34ch}.strength-grid .card-wide p,.strength-grid .card:nth-child(2) p,.strength-grid .card-accent p{max-width:34ch}
 @media(max-width:760px){.strength-grid{display:block}.strength-grid .card,.strength-grid .card-wide,.strength-grid .card:nth-child(2),.strength-grid .card-accent{min-height:260px;height:auto}.strength-grid .card-wide{min-height:370px}}
 .hero h1{font-size:clamp(3rem,4.3vw,5rem);line-height:1.12;letter-spacing:-.07em;text-wrap:pretty}.hero h1 span,.hero h1 em{display:block;white-space:normal}
-@media(max-width:760px){.hero h1{font-size:clamp(2.35rem,10vw,3.3rem);line-height:1.14}}
+@media(max-width:760px){.hero h1{font-size:clamp(2.2rem,9vw,3rem);line-height:1.12;letter-spacing:-.07em}}
 .scene-card:nth-child(3):hover{transform:translateY(-16px)!important}
 .section-head h2,.closing h2{font-size:clamp(2.8rem,4.2vw,5rem);line-height:1.12;letter-spacing:-.07em}.closing h2{border-bottom:2px solid var(--ink);padding-bottom:26px}
 @media(max-width:760px){.section-head h2,.closing h2{font-size:clamp(2.2rem,9vw,3rem)}.closing h2{padding-bottom:20px}}
 .section-head h2 span,.section-head h2 em,.closing h2 span,.closing h2 em{display:block}.scene-card figcaption strong{white-space:nowrap}
-.approach-layout{display:block;max-width:920px}.approach-summary p+p{margin-top:28px}.approach-summary>span{display:block;margin-top:34px}
+.approach-layout{display:block;max-width:920px}.approach-summary p{margin:0;line-height:1.8}.approach-summary p+p{margin-top:0}
 .scene-card,.scene-card:nth-child(1),.scene-card:nth-child(2),.scene-card:nth-child(3),.scene-card:nth-child(4){flex:0 0 min(23vw,320px);transform:none}.scene-card:hover{transform:translateY(-8px)!important}
 @media(max-width:760px){.scene-card,.scene-card:nth-child(1),.scene-card:nth-child(2),.scene-card:nth-child(3),.scene-card:nth-child(4){flex:0 0 100%;transform:none!important}}
 .section-head h2{flex:1;margin-left:0;max-width:none}
@@ -51,7 +51,15 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 #strengths .section-head{border-bottom:0}
 .scene-card:nth-child(4) figcaption span{color:var(--cyan)}
 #career .career-layout{padding-top:36px}
-.hero h1{font-size:clamp(2.5rem,3vw,3.8rem);line-height:1.16}
-@media(max-width:760px){.hero h1{font-size:clamp(2.2rem,9vw,3.1rem);line-height:1.14}}
+.hero h1{font-size:clamp(2.8rem,4.2vw,5rem);line-height:1.12;letter-spacing:-.07em}
+@media(max-width:760px){.hero h1{font-size:clamp(2.2rem,9vw,3rem);line-height:1.12;letter-spacing:-.07em}}
 @media(min-width:761px){.strength-grid .card h3{min-height:2.7em}}
+@media(min-width:761px){.strength-grid .card{justify-content:flex-start}.strength-grid .card p{margin-top:20px}}
+.strength-grid .card p{width:100%;max-width:none;text-indent:0;text-align:justify;text-justify:inter-ideograph;text-align-last:left}
 .hero h1,.section-head h2,.closing h2,.card h3{font-family:var(--sans);font-weight:800}
+.hero h1,.section-head h2,.closing h2{font-size:clamp(2.5rem,3vw,3.8rem);line-height:1.16;letter-spacing:-.07em}
+@media(max-width:760px){.hero h1,.section-head h2,.closing h2{font-size:clamp(2.2rem,9vw,3.1rem);line-height:1.14;letter-spacing:-.07em}}
+.section-head h2{white-space:nowrap}
+.section-head h2 span,.section-head h2 em{display:inline;white-space:nowrap}
+.section-head h2 em{margin-left:.16em}
+@media(max-width:760px){.section-head h2{font-size:clamp(1.15rem,5.5vw,2.2rem);letter-spacing:-.08em}.section-head h2 span,.section-head h2 em{display:inline;white-space:nowrap}}
