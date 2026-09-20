@@ -25,3 +25,6 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 .scene-card,.scene-card:nth-child(1),.scene-card:nth-child(2),.scene-card:nth-child(3),.scene-card:nth-child(4){flex:0 0 min(23vw,320px);transform:none}.scene-card:hover{transform:translateY(-8px)!important}
 @media(max-width:760px){.scene-card,.scene-card:nth-child(1),.scene-card:nth-child(2),.scene-card:nth-child(3),.scene-card:nth-child(4){flex:0 0 100%;transform:none!important}}
 .section-head h2{flex:1;margin-left:0;max-width:none}
+.section-head{display:block}.section-head h2{margin:28px 0 0;max-width:920px}
+@media(max-width:760px){.section-head h2{margin:20px 0 0}}
+.scene-card:nth-child(4) img{object-fit:contain;background:#0b0d0f}
