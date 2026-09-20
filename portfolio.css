@@ -49,3 +49,4 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 .dark-section .approach-summary,#career .career-summary{width:100%;max-width:none;margin:0}
 .approach-summary p,.career-summary p,.closing>p:not(.eyebrow){text-indent:0}
 #strengths .section-head{border-bottom:0}
+.scene-card:nth-child(4) figcaption span{color:var(--cyan)}
