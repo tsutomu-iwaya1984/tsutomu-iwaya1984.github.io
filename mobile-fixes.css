@@ -1,3 +1,9 @@
+
+
+/* Match hero title sizing to the other mobile section titles. */
+@media (max-width:760px){
+  .hero h1{font-size:clamp(1.8rem,7.5vw,2.5rem)!important;line-height:1.28}
+}
 /* Mobile layout fixes for iPhone-sized screens. */
 @media (max-width:760px){
   html,body{width:100%;max-width:100%;overflow-x:hidden}
