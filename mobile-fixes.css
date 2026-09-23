@@ -1,0 +1,50 @@
+/* Mobile layout fixes for iPhone-sized screens. */
+@media (max-width:760px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  *,*::before,*::after{min-width:0;box-sizing:border-box}
+  .site-header{position:absolute;display:block;width:100%;padding:18px 6vw}
+  .site-header nav{display:none}
+  .brand{font-size:.95rem;gap:8px}
+  .hero{width:100%;min-height:auto;padding:112px 7vw 54px;display:block}
+  .hero-copy{width:100%;max-width:none}
+  .hero h1{max-width:100%;font-size:clamp(2rem,10vw,3rem);line-height:1.18;letter-spacing:-.06em;overflow-wrap:anywhere}
+  .hero h1 span,.hero h1 em{display:block;white-space:normal}
+  .lead{font-size:.92rem;line-height:1.9;margin:24px 0 18px}
+  .hero-meta{margin-bottom:24px}
+  .hero-visual{width:100%;min-height:0;height:auto;aspect-ratio:1/1;margin-top:38px}
+  .hero-image{object-position:center;animation:none}
+  .section,.dark-section{width:100%;padding:76px 7vw}
+  .section-head{width:100%;margin-bottom:34px;display:block}
+  .section-head h2,.closing h2{width:100%;max-width:100%;font-size:clamp(1.9rem,8.6vw,2.7rem);line-height:1.22;letter-spacing:-.055em;white-space:normal;overflow-wrap:anywhere}
+  .section-head h2 span,.section-head h2 em{display:block;white-space:normal;margin-left:0}
+  .strength-grid{width:100%;display:block}
+  .strength-grid .card,.strength-grid .card-wide,.strength-grid .card:nth-child(2),.strength-grid .card-accent{width:100%;min-height:0;height:auto;margin:0 0 18px;padding:26px 22px}
+  .strength-grid .card h3{font-size:1.25rem;line-height:1.45;text-align:left;overflow-wrap:anywhere}
+  .strength-grid .card p{font-size:.9rem;line-height:1.9;text-align:left;overflow-wrap:anywhere}
+  .field-gallery{width:100%;padding:76px 0;overflow:hidden}
+  .field-gallery .section-head{padding:0 7vw;margin-bottom:30px}
+  .gallery-track{width:100%;padding:0 7vw;display:block}
+  .scene-card,.scene-card:nth-child(1),.scene-card:nth-child(2),.scene-card:nth-child(3),.scene-card:nth-child(4){width:100%;max-width:100%;margin:0 0 24px;transform:none!important}
+  .scene-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+  .scene-card figcaption{padding:16px 18px 18px}
+  .scene-card figcaption strong{font-size:1.25rem}
+  .gallery-note{padding:22px 7vw 0;font-size:.75rem;line-height:1.8;overflow-wrap:anywhere}
+  .dark-section{padding-top:76px;padding-bottom:76px}
+  .approach-layout,.career-layout{width:100%;max-width:none;padding-top:22px}
+  .approach-summary p,.career-summary p,.closing>p:not(.eyebrow){font-size:.9rem;line-height:1.95;overflow-wrap:anywhere}
+  #career{padding:76px 7vw 68px}
+  .closing{width:100%;padding:76px 7vw 68px}
+  .closing>h2{margin-top:18px;padding-bottom:18px}
+  .closing-sign{width:100%;display:block;padding-top:16px}
+  .closing-sign small{display:block;margin-top:8px;line-height:1.6;overflow-wrap:anywhere}
+  footer{width:100%;padding:18px 7vw;display:block;line-height:1.8;overflow-wrap:anywhere}
+  footer span{display:block;margin-bottom:5px}
+  .github-link{display:none!important}
+}
+
+/* Final mobile overflow corrections. */
+@media (max-width:760px){
+  .section-head h2 span,.section-head h2 em,.closing h2 span,.closing h2 em{display:block;white-space:normal!important;margin-left:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}
+  .section-head h2,.closing h2{font-size:clamp(1.8rem,7.5vw,2.5rem)!important;line-height:1.28}
+  .field-gallery .section-head{padding-left:7vw!important;padding-right:7vw!important}
+    }
