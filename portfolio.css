@@ -12,12 +12,18 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 @media(max-width:760px){.hero-image{object-position:58% center}.hero h1,.section-head h2,.closing h2{font-size:clamp(2.35rem,11vw,3.3rem);line-height:1.15}.section-head h2,.closing h2{max-width:none}.section-head h2 span,.section-head h2 em{display:block;white-space:nowrap}.closing h2{font-size:clamp(2.05rem,9.5vw,3rem);letter-spacing:-.07em}.closing h2 span,.closing h2 em{display:block;white-space:normal;overflow-wrap:anywhere}.gallery-track{display:block;padding:0 8vw;animation:none}.scene-card,.scene-card:nth-child(1),.scene-card:nth-child(2),.scene-card:nth-child(3),.scene-card:nth-child(4){display:block;width:100%;flex:none;margin:0 0 28px;box-shadow:8px 8px 0 var(--cyan)!important;transform:none}.scene-card img{aspect-ratio:4/3;object-fit:contain;background:#0b0d0f}.gallery-note{padding:35px 8vw 0}.field-gallery{padding:100px 0}.strength-grid{display:block}.strength-grid .card,.strength-grid .card-wide{min-height:260px;height:auto;margin-bottom:12px}.strength-grid .card-wide{min-height:370px}.dark-section{padding:100px 5vw}#career{padding:78px 5vw 68px}.career-layout,.approach-layout{display:block}.career-summary{width:100%!important}footer{line-height:2.2}footer span,footer .github-link{display:block;margin-bottom:4px}}
 
 
+
+
 /* Strength cards use one surface, one accent line, and one shadow language across all breakpoints. */
 .strength-grid .card,.strength-grid .card-wide{background:#172231!important;color:#f4f7fb!important;border-top:4px solid var(--blue)!important;box-shadow:8px 8px 0 rgba(22,119,255,.16)!important}.strength-grid .card:nth-child(2),.strength-grid .card-accent{background:#172231!important;color:#f4f7fb!important;border-top:4px solid var(--blue)!important}.strength-grid .card-no,.strength-grid .card b,.strength-grid .card:nth-child(2) .card-no,.strength-grid .card-accent .card-no,.strength-grid .card-accent b{color:var(--cyan)!important}.strength-grid .card:hover{box-shadow:8px 12px 0 rgba(22,119,255,.24)!important}
 
 
+
+
 /* Remove legacy hero motion decorations: horizontal scanline and double rings. */
 .hero-visual::after,.hero-visual .scanline,.hero-visual .orbit{display:none!important}
+
+
 
 
 .strength-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-areas:none;align-items:stretch}.strength-grid .card,.strength-grid .card-wide,.strength-grid .card:nth-child(2),.strength-grid .card-accent{grid-area:auto;min-height:500px;height:auto}.strength-grid .card p{max-width:34ch}.strength-grid .card-wide p,.strength-grid .card:nth-child(2) p,.strength-grid .card-accent p{max-width:34ch}
@@ -34,11 +40,3 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 .section-head h2{flex:1;margin-left:0;max-width:none}
 .section-head{display:block;max-width:920px;margin:0 auto}.section-head h2{margin:28px 0 0;max-width:none}
 .field-gallery .section-head{padding-left:0;padding-right:0}
-@media(max-width:760px){.section-head h2{margin:20px 0 0}}
-.scene-card:nth-child(4) img{object-fit:cover;background:#0b0d0f}
-.documents{padding:112px 5vw;background:var(--paper);border-top:1px solid #d9ddda}.documents .section-head{margin-bottom:40px}.document-links{max-width:920px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.document-card{display:grid;gap:10px;padding:24px;background:#172231;color:#fff;border-top:4px solid var(--blue);box-shadow:8px 8px 0 rgba(22,119,255,.16);transition:transform .25s ease,box-shadow .25s ease}.document-card:hover{transform:translateY(-4px);box-shadow:8px 12px 0 rgba(22,119,255,.24)}.document-card>span{font:500 .64rem var(--mono);letter-spacing:.08em;color:var(--cyan)}.document-card strong{font-size:1.2rem}.document-card>div{display:flex;flex-wrap:wrap;gap:10px 18px}.document-card a{color:#fff;font:600 .78rem var(--mono);text-decoration:none}.document-card a:hover{color:var(--cyan)}.document-card .document-download{color:var(--cyan)}
-
-/* Remove black letterbox space from the wide hero artwork. */
-.hero-visual{min-height:0;aspect-ratio:16 / 9}
-.hero-image{object-fit:cover;background:transparent}
-@media(max-width:760px){.hero-visual{aspect-ratio:16 / 9}}
