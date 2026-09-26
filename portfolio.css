@@ -11,11 +11,14 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 @media(max-width:1100px){.hero h1,.section-head h2,.closing h2{font-size:clamp(3rem,6vw,6.4rem);line-height:1.15}}
 @media(max-width:760px){.hero-image{object-position:58% center}.hero h1,.section-head h2,.closing h2{font-size:clamp(2.35rem,11vw,3.3rem);line-height:1.15}.section-head h2,.closing h2{max-width:none}.section-head h2 span,.section-head h2 em{display:block;white-space:nowrap}.closing h2{font-size:clamp(2.05rem,9.5vw,3rem);letter-spacing:-.07em}.closing h2 span,.closing h2 em{display:block;white-space:normal;overflow-wrap:anywhere}.gallery-track{display:block;padding:0 8vw;animation:none}.scene-card,.scene-card:nth-child(1),.scene-card:nth-child(2),.scene-card:nth-child(3),.scene-card:nth-child(4){display:block;width:100%;flex:none;margin:0 0 28px;box-shadow:8px 8px 0 var(--cyan)!important;transform:none}.scene-card img{aspect-ratio:4/3;object-fit:contain;background:#0b0d0f}.gallery-note{padding:35px 8vw 0}.field-gallery{padding:100px 0}.strength-grid{display:block}.strength-grid .card,.strength-grid .card-wide{min-height:260px;height:auto;margin-bottom:12px}.strength-grid .card-wide{min-height:370px}.dark-section{padding:100px 5vw}#career{padding:78px 5vw 68px}.career-layout,.approach-layout{display:block}.career-summary{width:100%!important}footer{line-height:2.2}footer span,footer .github-link{display:block;margin-bottom:4px}}
 
+
 /* Strength cards use one surface, one accent line, and one shadow language across all breakpoints. */
 .strength-grid .card,.strength-grid .card-wide{background:#172231!important;color:#f4f7fb!important;border-top:4px solid var(--blue)!important;box-shadow:8px 8px 0 rgba(22,119,255,.16)!important}.strength-grid .card:nth-child(2),.strength-grid .card-accent{background:#172231!important;color:#f4f7fb!important;border-top:4px solid var(--blue)!important}.strength-grid .card-no,.strength-grid .card b,.strength-grid .card:nth-child(2) .card-no,.strength-grid .card-accent .card-no,.strength-grid .card-accent b{color:var(--cyan)!important}.strength-grid .card:hover{box-shadow:8px 12px 0 rgba(22,119,255,.24)!important}
 
+
 /* Remove legacy hero motion decorations: horizontal scanline and double rings. */
 .hero-visual::after,.hero-visual .scanline,.hero-visual .orbit{display:none!important}
+
 
 .strength-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-areas:none;align-items:stretch}.strength-grid .card,.strength-grid .card-wide,.strength-grid .card:nth-child(2),.strength-grid .card-accent{grid-area:auto;min-height:500px;height:auto}.strength-grid .card p{max-width:34ch}.strength-grid .card-wide p,.strength-grid .card:nth-child(2) p,.strength-grid .card-accent p{max-width:34ch}
 @media(max-width:760px){.strength-grid{display:block}.strength-grid .card,.strength-grid .card-wide,.strength-grid .card:nth-child(2),.strength-grid .card-accent{min-height:260px;height:auto}.strength-grid .card-wide{min-height:370px}}
@@ -34,41 +37,8 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 @media(max-width:760px){.section-head h2{margin:20px 0 0}}
 .scene-card:nth-child(4) img{object-fit:cover;background:#0b0d0f}
 .documents{padding:112px 5vw;background:var(--paper);border-top:1px solid #d9ddda}.documents .section-head{margin-bottom:40px}.document-links{max-width:920px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.document-card{display:grid;gap:10px;padding:24px;background:#172231;color:#fff;border-top:4px solid var(--blue);box-shadow:8px 8px 0 rgba(22,119,255,.16);transition:transform .25s ease,box-shadow .25s ease}.document-card:hover{transform:translateY(-4px);box-shadow:8px 12px 0 rgba(22,119,255,.24)}.document-card>span{font:500 .64rem var(--mono);letter-spacing:.08em;color:var(--cyan)}.document-card strong{font-size:1.2rem}.document-card>div{display:flex;flex-wrap:wrap;gap:10px 18px}.document-card a{color:#fff;font:600 .78rem var(--mono);text-decoration:none}.document-card a:hover{color:var(--cyan)}.document-card .document-download{color:var(--cyan)}
-@media(max-width:760px){.documents{padding:78px 8vw}.document-links{display:block}.document-links a{margin-bottom:14px}}
 
-/* Keep every section head, including NEXT MISSION, on the same centered content rail. */
-.closing{padding:150px 5vw 110px}
-.closing>.eyebrow,.closing>h2,.closing>p:not(.eyebrow),.closing>.closing-sign{width:100%;max-width:920px;margin-left:auto;margin-right:auto}
-.closing>h2{margin-top:28px}
-.closing>p:not(.eyebrow){max-width:920px}
-@media(max-width:760px){
-  .section-head h2 span,.section-head h2 em{white-space:normal}
-  .closing{padding:100px 8vw}
-  .closing>h2{margin-top:20px}
-  .closing>p:not(.eyebrow){max-width:920px}
-}
-
-/* Paragraphs start on the same centered rail and x-position as their heading. */
-.approach-layout,.career-layout{display:block;width:100%;max-width:920px;margin:0 auto}
-.dark-section .approach-summary,#career .career-summary{width:100%;max-width:none;margin:0}
-.approach-summary p,.career-summary p,.closing>p:not(.eyebrow){text-indent:0}
-#strengths .section-head{border-bottom:0}
-.scene-card:nth-child(4) figcaption span{color:var(--cyan)}
-#career .career-layout{padding-top:36px}
-#approach .approach-layout{padding-top:36px}
-.hero h1{font-size:clamp(2.8rem,4.2vw,5rem);line-height:1.12;letter-spacing:-.07em}
-@media(max-width:760px){.hero h1{font-size:clamp(2.2rem,9vw,3rem);line-height:1.12;letter-spacing:-.07em}}
-@media(min-width:761px){.strength-grid .card h3{min-height:2.7em}}
-@media(min-width:761px){.strength-grid .card{justify-content:flex-start}.strength-grid .card p{margin-top:20px}}
-.strength-grid .card{padding:34px}
-.strength-grid .card>*{width:100%;max-width:none;margin-left:0;margin-right:0}
-.strength-grid .card p{width:100%!important;max-width:100%!important;text-indent:0;text-align:justify;text-justify:inter-ideograph;text-align-last:left;letter-spacing:0;text-wrap:wrap}
-.hero h1,.section-head h2,.closing h2,.card h3{font-family:var(--sans);font-weight:800}
-.hero h1,.section-head h2,.closing h2{font-size:clamp(2.5rem,3vw,3.8rem);line-height:1.16;letter-spacing:-.07em}
-@media(max-width:760px){.hero h1,.section-head h2,.closing h2{font-size:clamp(2.2rem,9vw,3.1rem);line-height:1.14;letter-spacing:-.07em}}
-.section-head h2{white-space:nowrap}
-.section-head h2 span,.section-head h2 em{display:inline;white-space:nowrap}
-.section-head h2 em{margin-left:.16em}
-@media(max-width:760px){.section-head h2{font-size:clamp(1.15rem,5.5vw,2.2rem);letter-spacing:-.08em}.section-head h2 span,.section-head h2 em{display:inline;white-space:nowrap}}
-.github-link{font-size:.82rem;font-weight:700;letter-spacing:.06em}
-.strength-grid .card h3{text-align:center;width:100%;margin-left:auto;margin-right:auto}
+/* Remove black letterbox space from the wide hero artwork. */
+.hero-visual{min-height:0;aspect-ratio:16 / 9}
+.hero-image{object-fit:cover;background:transparent}
+@media(max-width:760px){.hero-visual{aspect-ratio:16 / 9}}
