@@ -1,4 +1,5 @@
-/* Portfolio design system: paper / ink / blue, with cyan structure on dark surfaces. */
+
+/* publish alignment *//* Portfolio design system: paper / ink / blue, with cyan structure on dark surfaces. */
 :root{--ink:#101820;--blue:#1677ff;--cyan:#9fe6ee;--paper:#fff;--soft:#f6f7f5;--cream:#ece9e2;--muted:#687078;--dark:#111418;--dark-line:#344357}
 html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:var(--ink)}.progress span{background:var(--blue)}nav a:hover,.github-link{color:var(--blue)}.hero h1 em,h2 em,.card b,.timeline time{color:var(--blue)}.eyebrow{color:var(--muted)}
 .hero{background:var(--paper);position:relative;isolation:isolate}.hero-visual{background:#0b0d0f;border:1px solid #0b0d0f;position:relative;overflow:hidden}.hero-visual:before{display:none}.hero-image{position:absolute;z-index:1;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;display:block;opacity:1;background:#0b0d0f;mix-blend-mode:normal;filter:saturate(1.05) contrast(1.04);animation:conceptDrive 8s ease-in-out infinite alternate;will-change:transform}.visual-label{z-index:2;color:#fff;background:#0b0d0f;padding:3px 7px;font-size:.56rem}.label-a{top:8%;left:6%;color:var(--cyan)}.label-b{bottom:6%;right:6%;color:#fff}.hero-visual:after{content:'';position:absolute;z-index:2;left:-20%;right:-20%;bottom:13%;height:2px;background:linear-gradient(90deg,transparent,var(--blue) 35%,#fff 50%,var(--blue) 65%,transparent);filter:blur(1px);opacity:.75;animation:roadSweep 3.8s ease-in-out infinite}.hero-visual .scanline,.hero-visual .orbit{z-index:2}
@@ -40,3 +41,10 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 .section-head h2{flex:1;margin-left:0;max-width:none}
 .section-head{display:block;max-width:920px;margin:0 auto}.section-head h2{margin:28px 0 0;max-width:none}
 .field-gallery .section-head{padding-left:0;padding-right:0}
+/* Final alignment override */
+.label-a{display:none!important}
+#approach .section-head,#career .section-head,#contact>h2{width:min(920px,100%);margin-left:auto;margin-right:auto;text-align:center}
+#approach .approach-layout,#career .career-layout,#contact>p:not(.eyebrow){width:min(920px,100%);max-width:920px;margin-left:auto;margin-right:auto}
+#approach .approach-layout,#career .career-layout{padding-top:1.25em}
+#approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){margin-left:0;margin-right:0;text-indent:0;text-align:justify;text-justify:inter-ideograph}
+@media(max-width:760px){#approach .section-head,#career .section-head,#contact>h2{text-align:center}#approach .approach-layout,#career .career-layout{padding-top:1.25em}#approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-align:left}}
