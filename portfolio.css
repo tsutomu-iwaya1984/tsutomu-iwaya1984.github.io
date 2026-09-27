@@ -70,3 +70,9 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 #career .career-summary p{width:100%;max-width:none}
 #approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-indent:0;text-align:justify;text-justify:inter-ideograph}
 @media(max-width:760px){#approach .section-head h2 em{white-space:normal;font-size:inherit}#approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-align:left}}
+/* Keep nested title phrase inline */
+#approach .section-head h2 em .phrase-lock{display:inline;white-space:nowrap}
+#approach .section-head h2 em{display:block;white-space:nowrap}
+#career .career-layout{display:block!important}
+#career .career-summary,#career .career-summary p{width:100%;max-width:none}
+@media(max-width:760px){#approach .section-head h2 em,#approach .section-head h2 em .phrase-lock{white-space:normal}}
