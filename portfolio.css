@@ -103,3 +103,9 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 .field-gallery .section-head{text-align:center!important}
 .field-gallery .section-head h2{margin-left:auto!important;margin-right:auto!important}
 @media(max-width:760px){.hero h1{font-size:clamp(2.2rem,9vw,3rem)!important}.field-gallery .section-head{text-align:center!important}}
+/* Match CORE STRENGTHS heading to the centered closing-section treatment */
+#strengths .section-head{border-bottom:0!important;padding-bottom:0;text-align:center}
+#strengths .section-head h2{width:min(920px,100%);max-width:920px;margin-left:auto;margin-right:auto;text-align:center;font-size:clamp(2.5rem,3.4vw,4.2rem);line-height:1.12;letter-spacing:-.07em}
+#strengths .section-head h2 span,#strengths .section-head h2 em{display:block;white-space:normal}
+#strengths .section-head h2 em{color:var(--blue)}
+@media(max-width:760px){#strengths .section-head h2{font-size:clamp(2.2rem,9vw,3rem)}}
