@@ -48,3 +48,18 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 #approach .approach-layout,#career .career-layout{padding-top:1.25em}
 #approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){margin-left:0;margin-right:0;text-indent:0;text-align:justify;text-justify:inter-ideograph}
 @media(max-width:760px){#approach .section-head,#career .section-head,#contact>h2{text-align:center}#approach .approach-layout,#career .career-layout{padding-top:1.25em}#approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-align:left}}
+/* Final title wrapping and paragraph rhythm */
+#approach .section-head,#career .section-head,#contact>h2{width:min(920px,100%);max-width:920px;margin-left:auto;margin-right:auto;text-align:center}
+#approach .section-head h2,#career .section-head h2,#contact>h2{font-size:clamp(2.5rem,3.4vw,4.2rem)}
+#approach .section-head h2 em,#career .section-head h2 em,#contact>h2 em{white-space:nowrap}
+#approach .approach-layout,#career .career-layout,#contact>p:not(.eyebrow){width:min(920px,100%);max-width:920px;margin-left:auto;margin-right:auto}
+#approach .approach-layout,#career .career-layout{padding-top:1em}
+#approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){width:100%;max-width:none;margin-top:0;margin-right:0;margin-bottom:0;text-indent:0;line-height:1.8;text-align:justify;text-justify:inter-ideograph}
+#contact>h2{margin-bottom:0;padding-bottom:26px}
+#contact>p:not(.eyebrow){margin-top:1em}
+@media(max-width:760px){
+  #approach .section-head h2,#career .section-head h2,#contact>h2{font-size:clamp(2.2rem,9vw,3rem)}
+  #approach .section-head h2 em,#career .section-head h2 em,#contact>h2 em{white-space:normal}
+  #approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-align:left}
+  #contact>h2{padding-bottom:20px}
+}
