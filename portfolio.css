@@ -73,6 +73,16 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 .section-head h2{font-size:clamp(2.5rem,3.4vw,4.2rem)}
 @media(max-width:760px){.section-head h2{font-size:clamp(2.2rem,9vw,3rem)}}
 
+
+/* Unify hero title scale and center the field-gallery heading */
+.hero h1{font-size:clamp(2.5rem,3.4vw,4.2rem)}
+.field-gallery .section-head{text-align:center}
+.field-gallery .section-head h2{margin-left:auto;margin-right:auto}
+@media(max-width:760px){
+  .hero h1{font-size:clamp(2.2rem,9vw,3rem)}
+  .field-gallery .section-head{text-align:center}
+}
+
 #approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-indent:0;text-align:justify;text-justify:inter-ideograph}
 @media(max-width:760px){#approach .section-head h2 em{white-space:normal;font-size:inherit}#approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-align:left}}
 /* Keep nested title phrase inline */
@@ -88,3 +98,8 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
 #career .career-summary,#career .career-summary p{width:100%;max-width:none}
 #approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-indent:0;text-align:justify;text-justify:inter-ideograph}
 @media(max-width:760px){#approach .section-head h2 em,#approach .section-head h2 em .phrase-lock{white-space:normal}}
+/* Final consistency override: hero and field-gallery headings */
+.hero h1{font-size:clamp(2.5rem,3.4vw,4.2rem)!important}
+.field-gallery .section-head{text-align:center!important}
+.field-gallery .section-head h2{margin-left:auto!important;margin-right:auto!important}
+@media(max-width:760px){.hero h1{font-size:clamp(2.2rem,9vw,3rem)!important}.field-gallery .section-head{text-align:center!important}}
