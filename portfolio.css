@@ -63,3 +63,10 @@ html,body{max-width:100%;overflow-x:hidden}body{background:var(--paper);color:va
   #approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-align:left}
   #contact>h2{padding-bottom:20px}
 }
+/* Consistent single-line emphasis and full-width white-section copy */
+#approach .section-head h2 em{display:block;white-space:nowrap;font-size:clamp(2.2rem,3vw,3.8rem)}
+#career .career-layout{display:block;width:min(920px,100%);max-width:920px}
+#career .career-summary{width:100%;max-width:none}
+#career .career-summary p{width:100%;max-width:none}
+#approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-indent:0;text-align:justify;text-justify:inter-ideograph}
+@media(max-width:760px){#approach .section-head h2 em{white-space:normal;font-size:inherit}#approach .approach-summary p,#career .career-summary p,#contact>p:not(.eyebrow){text-align:left}}
