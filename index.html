@@ -98,3 +98,12 @@
 <style id="strengths-heading-height-inline-fix">
 #strengths .strength-grid .card h3{min-height:0!important;align-items:flex-start!important}
 </style>
+<style id="strengths-card-layout-inline-fix">
+#strengths .strength-grid .card{display:grid!important;grid-template-rows:auto auto 1fr!important;align-content:start!important;justify-items:center!important;align-items:start!important}
+#strengths .strength-grid .card .card-no{grid-row:1;align-self:start!important;justify-self:start!important}
+#strengths .strength-grid .card h3{grid-row:2;min-height:0!important;align-self:start!important;margin:28px auto 0!important;text-align:center!important}
+#strengths .strength-grid .card p{grid-row:3;margin:1em auto 0!important;text-indent:1em!important}
+@media(max-width:760px){#strengths .strength-grid .card h3{margin-top:24px!important}#strengths .strength-grid .card p{margin-top:1em!important;text-indent:1em!important}}
+</style>
+<script>document.querySelectorAll('#strengths .strength-grid .card p').forEach(p=>{p.textContent=p.textContent.replace(/^[　\s]+/,'');});</script>
+</script>
