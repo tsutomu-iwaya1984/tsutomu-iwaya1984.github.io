@@ -5,9 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="岩谷 努｜自動運転開発ドライバー応募用ポートフォリオ">
   <title>岩谷 努｜自動運転開発ドライバー Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=20260908-1">
-    <link rel="stylesheet" href="portfolio.css?v=20260921-5">
-    <link rel="stylesheet" href="mobile-fixes.css?v=20260923-3">
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+:root { --ink:#101820; --blue:#1677ff; --cyan:#9fe6ee; --paper:#fff; --soft:#f6f7f5; --cream:#ece9e2; --muted:#687078; --card:#182433; --mono:'DM Mono',monospace; --sans:'Manrope','Noto Sans JP',sans-serif; --heading-size:clamp(2rem,3.4vw,4.2rem); }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--paper); font-family:var(--sans); line-height:1.8; }
+a { color:inherit; text-decoration:none; }
+a:focus-visible { outline:3px solid var(--blue); outline-offset:5px; }
+img { display:block; max-width:100%; }
+h1,h2,h3,h4,p,figure { margin:0; }
+p { line-break:strict; overflow-wrap:break-word; }
+.progress { position:fixed; inset:0 0 auto; height:3px; z-index:10; pointer-events:none; }
+.progress span { display:block; width:0; height:100%; background:var(--blue); }
+.site-header { padding:26px 5vw; }
+.brand { display:inline-flex; align-items:baseline; gap:12px; font:500 1.2rem var(--mono); letter-spacing:.12em; }
+.brand small { font-size:.58rem; letter-spacing:.06em; color:var(--muted); }
+.hero { padding:100px 5vw 110px; display:grid; grid-template-columns:1.1fr 1fr; gap:5vw; align-items:center; }
+.hero-copy { min-width:0; }
+.eyebrow { margin-bottom:28px; color:var(--muted); text-align:center; font:500 .72rem/1.5 var(--mono); letter-spacing:.14em; }
+h1,h2 { font-size:var(--heading-size); font-weight:900; line-height:1.2; letter-spacing:-.065em; }
+h1>span,h1>em,h2>span,h2>em { display:block; }
+h1 em,h2 em { color:var(--blue); font-style:normal; }
+h1 { font-size:clamp(2rem,3.4vw,4.2rem); text-wrap:pretty; }
+.lead { margin:32px 0 24px; font-size:1rem; line-height:1.95; text-indent:1em; }
+.hero-meta { font:500 .75rem var(--mono); margin-bottom:32px; }
+.button { display:inline-flex; align-items:center; gap:24px; min-height:44px; border-bottom:1px solid var(--ink); font:500 .8rem var(--mono); }
+.button span { font-size:1.3rem; }
+.hero-visual { background:#0b0d0f; min-width:0; padding-bottom:34px; }
+.hero-image { width:100%; height:auto; aspect-ratio:1672/941; object-fit:contain; }
+.visual-label { text-align:right; padding:10px 16px 0; color:#fff; font:500 .6rem/1.4 var(--mono); letter-spacing:.1em; }
+.signal-divider { height:1px; margin:0 5vw; background:#d9ddda; }
+.section,.dark-section,.field-gallery,.closing { padding:96px 5vw; scroll-margin-top:24px; }
+.section-head { width:min(920px,100%); margin:0 auto 48px; text-align:center; }
+.section-head h2,.closing h2 { text-align:center; text-wrap:balance; }
+.strength-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; align-items:stretch; }
+.card { min-width:0; padding:34px; border-top:4px solid var(--blue); background:var(--card); color:#f4f7fb; box-shadow:8px 8px 0 #dbe6ff; display:grid; grid-template-rows:auto auto 1fr; align-content:start; }
+.card-no { color:var(--cyan); font:500 .75rem/1.4 var(--mono); }
+.card h3 { display:flex; justify-content:center; align-items:center; text-align:center; min-height:2.9em; margin-top:26px; font-size:1.22rem; line-height:1.45; letter-spacing:-.04em; }
+.card p { margin-top:1.95em; font-size:.98rem; line-height:1.95; text-align:left; text-indent:1em; color:#d7e0e9; }
+.field-gallery { background:var(--soft); }
+.gallery-track { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+.scene-card { margin:0; min-width:0; background:#0b0d0f; color:white; box-shadow:8px 8px 0 var(--cyan); }
+.scene-card img { width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; }
+.scene-card figcaption { display:grid; gap:7px; padding:18px; }
+.scene-card figcaption span,.scene-card figcaption small { font:500 .62rem/1.5 var(--mono); letter-spacing:.07em; color:var(--cyan); }
+.scene-card figcaption strong { font-size:1.35rem; }
+.scene-card figcaption small { color:#aeb6ba; }
+.gallery-note { margin:34px auto 0; max-width:920px; font-size:.86rem; color:var(--muted); text-align:center; }
+.dark-section { background:#111418; color:#fff; }
+.dark-section .eyebrow { color:#aebcc8; }
+.approach-layout,.closing>p:not(.eyebrow) { width:min(920px,100%); margin-inline:auto; }
+.approach-summary p,.closing>p:not(.eyebrow) { border-top:2px solid var(--cyan); padding-top:24px; font-size:1rem; line-height:1.95; text-indent:1em; }
+.career-layout { width:min(1100px,100%); margin:auto; display:grid; grid-template-columns:1.15fr 1fr; gap:64px; }
+.career-layout h3 { margin-bottom:20px; font-size:1.15rem; }
+.timeline { list-style:none; padding:0; margin:0; }
+.timeline li { border-top:1px solid #d9ddda; padding:20px 0; }
+.timeline time { color:var(--muted); font:500 .8rem/1.5 var(--mono); }
+.timeline h4 { margin:8px 0; font-size:1rem; }
+.timeline p,.career-facts p { font-size:1rem; line-height:1.95; text-indent:1em; }
+.qualifications { list-style:none; margin:0 0 36px; padding:0; }
+.qualifications li { border-top:1px solid #d9ddda; padding:16px 0; }
+.qualifications strong,.qualifications span { display:block; }
+.qualifications span { color:var(--muted); font-size:.9rem; }
+.closing { background:var(--cream); }
+.closing h2 { margin:0 auto 32px; max-width:1100px; }
+.closing>p:not(.eyebrow) { border-top-color:var(--ink); }
+.closing-sign { width:min(920px,100%); margin:28px auto 0; border-top:1px solid #bdbfbc; padding-top:20px; display:flex; gap:20px; align-items:baseline; }
+.closing-sign>span { font-size:1.2rem; font-weight:700; }
+.closing-sign small { color:var(--muted); font:500 .65rem/1.6 var(--mono); }
+footer { padding:24px 5vw; display:flex; align-items:center; justify-content:space-between; gap:20px; color:var(--muted); font:500 .65rem/1.8 var(--mono); letter-spacing:.06em; }
+.github-link { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:8px 12px; color:var(--blue); font-size:1.05rem; font-weight:700; }
+.github-link:hover { text-decoration:underline; }
+@media(max-width:1100px) {
+  .hero { grid-template-columns:1fr; gap:40px; padding-top:60px; }
+  .hero-copy { width:min(820px,100%); margin:auto; }
+  h1 { text-align:center; font-size:var(--heading-size); text-wrap:balance; }
+  .hero-visual { width:min(760px,100%); margin:auto; }
+  .strength-grid { grid-template-columns:1fr; width:min(760px,100%); margin:auto; }
+  .card { padding:32px; }
+  .card h3 { min-height:0; }
+  .gallery-track { grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; }
+}
+@media(max-width:760px) {
+  :root { --heading-size:clamp(1.5rem,6.5vw,2.5rem); }
+  .site-header { padding:20px 7vw; }
+  .brand { font-size:1rem; }
+  .brand small { display:none; }
+  .hero { padding:52px 7vw 64px; }
+  .eyebrow { font-size:.68rem; margin-bottom:24px; }
+  .lead { font-size:1rem; margin-top:28px; }
+  .section,.dark-section,.field-gallery,.closing { padding:68px 7vw; }
+  .section-head { margin-bottom:36px; }
+  .strength-grid { gap:24px; }
+  .card { padding:26px 22px; }
+  .card h3 { margin-top:24px; font-size:1.15rem; }
+  .card p { font-size:1rem; }
+  .gallery-track { grid-template-columns:1fr; }
+  .gallery-note { text-align:left; text-indent:1em; }
+  .career-layout { grid-template-columns:1fr; gap:36px; }
+  .closing-sign { display:block; }
+  .closing-sign small { display:block; margin-top:8px; }
+  footer { padding:22px 7vw; flex-direction:column; align-items:flex-start; gap:8px; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+  </style>
 </head>
 <body>
   <div class="progress" aria-hidden="true"><span></span></div>
@@ -16,122 +120,87 @@
   </header>
 
   <main id="top">
-    <section class="hero reveal">
+    <section class="hero">
       <div class="hero-copy">
       <p class="eyebrow">APPLICATION PORTFOLIO / FIELD EXPERIENCE</p>
-        <h1><span>車両の構造知識をもとに、</span><em>道路状況と車両の挙動の<br>変化に真摯に向き合います。</em></h1>
-        <p class="lead">　自動車の整備からお客様の命を預かるプロドライバーへ。立場を変えながら、さまざまな仕事を通じて経験を重ね、車両への理解と安全への意識を培ってまいりました。</p>
+        <h1><span>車両の構造知識をもとに、</span><em>道路状況と車両の挙動の変化に真摯に向き合います。</em></h1>
+        <p class="lead">自動車の整備からお客様の命を預かるプロドライバーへ。立場を変えながら、さまざまな仕事を通じて経験を重ね、車両への理解と安全への意識を培ってまいりました。</p>
         <div class="hero-meta"><span>岩谷 努</span></div>
         <a class="button" href="#strengths">経験を読む <span>↓</span></a>
       </div>
       <div class="hero-visual" aria-label="車両評価をイメージした抽象グラフィック">
-        <div class="scanline"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <img class="hero-image" src="hero-concept.png?v=20260925-4" alt="黒いグリルと黒いエンブレム、自動運転用センサーを備えた右ハンドルの車両が、日本の左側通行の市街地道路を走るアニメ調のAI生成コンセプトイラスト">
-        <div class="visual-label label-a">OBSERVE / 01</div><div class="visual-label label-b">CONCEPT IMAGE / AI-GENERATED</div>
+        <img decoding="async" width="1672" height="941" fetchpriority="high" class="hero-image" src="hero-concept.png?v=20260925-4" alt="黒いグリルと黒いエンブレム、自動運転用センサーを備えた右ハンドルの車両が、日本の左側通行の市街地道路を走るアニメ調のAI生成コンセプトイラスト">
+        <div class="visual-label label-b">CONCEPT IMAGE / AI-GENERATED</div>
       </div>
     </section>
 
     <div class="signal-divider" aria-hidden="true"></div>
 
-    <section id="strengths" class="section reveal">
+    <section id="strengths" class="section">
       <div class="section-head"><p class="eyebrow">01 / CORE STRENGTHS</p><h2><span>これまでの経験を</span><em>貴社の業務に活かします。</em></h2></div>
       <div class="strength-grid">
-        <article class="card card-wide"><span class="card-no">01</span><h3>整備経験を活かした不具合の追究</h3><p>　これまで自動車修理・販売に携わる中で、お客様が感じられた違和感を丁寧に聞き取り、いつ、どのような状況で症状が現れたのかを整理し、原因の特定と修理につなげてまいりました。車両の走行時における不具合には、車速やブレーキの踏み方、操舵角、外気温、段差通過時の荷重変化など、さまざまな条件が関わると認識しております。その経験を活かし、貴社の開発現場でも、不具合が発生した際には、車両の挙動に加え、路面状況や操作のタイミングなどの発生条件を正確に記録し、改善につながる情報として開発チームの皆様と共有します。</p></article>
-        <article class="card"><span class="card-no">02</span><h3>予測・防衛運転を活かす運転経験</h3><p>　これまでのバス運転手の経験から、安定性のある乗り心地を反映させたいと考えます。日頃のバス運行では五感で神経を研ぎ澄まし、前車のルームミラーやサイドミラーに映る運転者の視線や、自車のミラーで後続車の動きを捉えて周囲の挙動を先読みしています。その経験を活かし、貴社の走行実験でも、周囲を先読みすることで無駄な急操作を防ぎ、指示された走行条件やルートを守りながら、横揺れのない滑らかな加速で安定した乗り心地を追求し、完全自動運転開発に貢献したいと考えます。また、夜行高速バスの乗務経験があり、早朝や夜間の走行実験にも柔軟に対応可能です。</p></article>
-        <article class="card card-accent"><span class="card-no">03</span><h3>協調・調和を第一に考える行動</h3><p>　これまで販売の仕事では、お客様のご要望を丁寧に伺い、車両や用途に合った商品の提案をしてまいりました。現在は、組合活動において管理職や関係機関との協議を行い、局員の働き方の改善に取り組んでおります。こうした販売や組合活動の経験を通じて培った対話力と協調性を活かし、貴社でもチームとの調和を図りたいと考えます。また、開発チームからの助言を真摯に受け止め、次の評価走行に確実に反映させたいと考えます。完全自動運転開発という高い目標に向けて、新しい知識や技術を謙虚に吸収しながら、開発チームの皆様と力を合わせ、全力を尽くして業務に取り組む所存です。</p></article>
+        <article class="card card-wide"><span class="card-no">01</span><h3>整備経験を活かした不具合の追究</h3><p>これまで自動車修理・販売に携わる中で、お客様が感じられた違和感を丁寧に聞き取り、いつ、どのような状況で症状が現れたのかを整理し、原因の特定と修理につなげてまいりました。車両の走行時における不具合には、車速やブレーキの踏み方、操舵角、外気温、段差通過時の荷重変化など、さまざまな条件が関わると認識しております。その経験を活かし、貴社の開発現場でも、不具合が発生した際には、車両の挙動に加え、路面状況や操作のタイミングなどの発生条件を正確に記録し、改善につながる情報として開発チームの皆様と共有します。</p></article>
+        <article class="card"><span class="card-no">02</span><h3>予測・防衛運転を活かす運転経験</h3><p>バス運転手として、お客様に安全・安心で安定した乗り心地を提供してまいりました。その経験を、貴社の評価走行に活かしたいと考えております。現在のバス運行では、前方や周囲を走行する車両のルームミラーやサイドミラーに映る運転者の顔の向きや視線、他車の動きから周囲の状況を先読みし、事故防止に努めております。評価走行では、指示された走行条件やルートを守りながら、車両の加速・減速に伴う揺れや乗り心地、挙動の変化を確認します。また、夜行高速バスの乗務経験があり、早朝や夜間の走行実験にも柔軟に対応可能です。</p></article>
+        <article class="card card-accent"><span class="card-no">03</span><h3>協調・調和を第一に考える行動</h3><p>これまで販売の仕事では、お客様のご要望を丁寧に伺い、車両や用途に合った商品の提案をしてまいりました。現在は、組合活動において管理職や関係機関との協議を行い、局員の働き方の改善に取り組んでおります。こうした販売や組合活動の経験を通じて培った対話力と協調性を活かし、貴社でもチームとの調和を図りたいと考えます。また、開発チームからの助言を真摯に受け止め、次の評価走行に確実に反映させたいと考えます。販売や組合活動で大切にしてまいりました対話と協議を通じて、開発チームの皆様と力を合わせ、業務に取り組んでまいります。</p></article>
       </div>
     </section>
 
-    <section class="field-gallery reveal" aria-labelledby="field-gallery-title">
+    <section id="field-gallery" class="field-gallery" aria-labelledby="field-gallery-title">
       <div class="section-head"><p class="eyebrow">FIELD SCENES / CONCEPT GRAPHICS</p><h2 id="field-gallery-title"><span>現場で培った</span><em>経験を活かします。</em></h2></div>
       <div class="gallery-track">
-        <figure class="scene-card"><img src="maintenance-ev.png?v=20260921-3" alt="車両の開いたボンネットを確認する整備作業のイメージ"><figcaption><span>01 / MAINTENANCE</span><strong>整備</strong><small>AI-GENERATED CONCEPT IMAGE</small></figcaption></figure>
-        <figure class="scene-card"><img src="sales-consultation.png?v=20260921-3" alt="販売担当者がお客様へ車両状態や整備内容を説明する販売相談のイメージ"><figcaption><span>02 / SALES</span><strong>販売</strong><small>AI-GENERATED CONCEPT IMAGE</small></figcaption></figure>
-        <figure class="scene-card"><img src="bus-driving.png?v=20260921-56" alt="右ハンドルの大型バスを両手で運転する作業イメージ"><figcaption><span>03 / DRIVING</span><strong>運転</strong><small>AI-GENERATED CONCEPT IMAGE</small></figcaption></figure>
-        <figure class="scene-card"><img src="team-information-sharing.png?v=20260921-4" alt="車両挙動や走行記録についてチームで情報共有する作業イメージ"><figcaption><span>04 / SHARING</span><strong>共有</strong><small>AI-GENERATED CONCEPT IMAGE</small></figcaption></figure>
+        <figure class="scene-card"><img decoding="async" loading="lazy" width="1448" height="1086" src="maintenance-ev.png?v=20260921-3" alt="車両の開いたボンネットを確認する整備作業のイメージ"><figcaption><span>01 / MAINTENANCE</span><strong>整備</strong><small>AI-GENERATED CONCEPT IMAGE</small></figcaption></figure>
+        <figure class="scene-card"><img decoding="async" loading="lazy" width="1448" height="1086" src="sales-consultation.png?v=20260921-3" alt="販売担当者がお客様へ車両状態や整備内容を説明する販売相談のイメージ"><figcaption><span>02 / SALES</span><strong>販売</strong><small>AI-GENERATED CONCEPT IMAGE</small></figcaption></figure>
+        <figure class="scene-card"><img decoding="async" loading="lazy" width="1448" height="1086" src="bus-driving.png?v=20260921-56" alt="右ハンドルの大型バスを両手で運転する作業イメージ"><figcaption><span>03 / DRIVING</span><strong>運転</strong><small>AI-GENERATED CONCEPT IMAGE</small></figcaption></figure>
+        <figure class="scene-card"><img decoding="async" loading="lazy" width="1448" height="1086" src="team-information-sharing.png?v=20260921-4" alt="車両挙動や走行記録についてチームで情報共有する作業イメージ"><figcaption><span>04 / SHARING</span><strong>共有</strong><small>AI-GENERATED CONCEPT IMAGE</small></figcaption></figure>
       </div>
       <p class="gallery-note">人物・車両はいずれも実在の写真ではなく、経験を説明するためのAI生成コンセプトイメージです。</p>
     </section>
 
-    <section id="approach" class="dark-section reveal"><div class="section-head"><p class="eyebrow">02 / FIELD APPROACH</p><h2><span>思い込みを避け、</span><em><span class="phrase-lock">確認した事実</span>を大切にします。</em></h2></div>
-      <div class="approach-layout"><div class="approach-summary"><p>　貴社で定められた手順を一つひとつ丁寧に守ります。「違和感がある」という感覚だけで終わらせず、車速や路面状況、操作のタイミングとともに、車両の挙動を正確に記録します。想定外の挙動が生じた際も自己判断せず、速やかに開発チームの皆様に共有します。これまでにさまざまな仕事で培った経験を過信せず、学ぶ姿勢を持ち、開発に役立つ走行データの収集に努めます。</p></div></div>
+    <section id="approach" class="dark-section"><div class="section-head"><p class="eyebrow">02 / FIELD APPROACH</p><h2><span>思い込みを避け、</span><em><span class="phrase-lock">確認した事実</span>を大切にします。</em></h2></div>
+      <div class="approach-layout"><div class="approach-summary"><p>貴社で定められた手順を一つひとつ丁寧に守ります。車両にエラーや異常が発生した場合は、試験手順に従い、必要に応じて手動運転操作へ移行し、安全を確保した上で、状況を確認・報告します。これまでにさまざまな仕事で培った経験を過信せず、学ぶ姿勢を持ち、開発に役立つ走行データの収集に努めます。</p></div></div>
     </section>
 
-    <section id="career" class="section reveal"><div class="section-head"><p class="eyebrow">03 / CAREER</p><h2><span>現場で積み重ねた</span><em>経験を活かします。</em></h2></div><div class="career-layout"><div class="career-summary"><p>　自動車整備、販売を通じてお客様のご要望に親身に寄り添い、車両状態を見極めた修理内容や商品の提案を通じて信頼関係を築いてまいりました。現在ではその経験を土台として路線・貸切バスの運行業務に携わり、天候や路面に応じた適切な運転でお客様に安心・安全な輸送サービスを提供させていただいております。</p></div></div></section>
+    <section id="career" class="section" aria-labelledby="career-title">
+      <div class="section-head"><p class="eyebrow">03 / CAREER</p><h2 id="career-title"><span>整備・販売からバス運転へ、</span><em>現場経験を重ねてまいりました。</em></h2></div>
+      <div class="career-layout">
+        <div class="career-history">
+          <h3>職務経歴</h3>
+          <ol class="timeline">
+            <li><time>2005年4月〜2010年10月</time><h4>株式会社日産サティオ島根</h4><p>自動車整備・車検・点検。不具合の原因究明と修理、整備提案に携わってまいりました。</p></li>
+            <li><time>2011年4月〜2012年12月</time><h4>出雲交通電気</h4><p>車両の電装品取付・修理と販売、車両や用途に合った商品の提案に携わってまいりました。</p></li>
+            <li><time>2013年7月〜2015年10月</time><h4>株式会社カーテックス一畑</h4><p>大型車・小型車の板金・整備・塗装、修理内容の検討や作業の進捗管理に携わってまいりました。</p></li>
+            <li><time>2015年11月〜2021年5月</time><h4>株式会社中国ジェイアールバス</h4><p>路線・高速バスの運転、乗務前の車両点検と運行条件の確認を担当してまいりました。</p></li>
+            <li><time>2021年6月〜現在</time><h4>松江市交通局</h4><p>一般路線・貸切バスの運行に従事しております。道路や天候の状況に応じた安全運行を担当しております。</p></li>
+          </ol>
+        </div>
+        <aside class="career-facts" aria-label="資格と日常の運転経験">
+          <h3>主な資格・免許</h3>
+          <ul class="qualifications">
+            <li><strong>二級自動車整備士</strong><span>ガソリン・ジーゼル／2005年3月</span></li>
+            <li><strong>大型自動車第二種運転免許</strong><span>2015年10月取得</span></li>
+            <li><strong>普通自動車第一種運転免許</strong><span>2003年3月取得</span></li>
+          </ul>
+          <h3>日常の運転経験</h3>
+          <p>運転支援機能を備えた自家用車を日常的に使用しており、運転支援機能を使用している際の加速・減速や車両の挙動を体感しております。渋滞時や混雑時、予想外の他車の動きを含め、実際の使用者として感じた車両の特徴や課題を記録・整理し、貴社の完全自動運転に向けた走行実験でのデータ収集・分析に活かしたいと考えております。</p>
+        </aside>
+      </div>
+    </section>
 
-    <section id="contact" class="closing reveal"><p class="eyebrow">NEXT MISSION</p><h2><span>これまでの現場経験を活かし、</span><em>完全自動運転開発に全力を尽くします。</em></h2><p>　これまでの経験から、貴社が目指す、周囲の状況を読み取り、「空気を読みながら走行する」自動運転の実現に強く共感しております。「We Overtake Tesla」を掲げて自社開発に挑む貴社で、これまでの現場経験を活かし、不足する知識や技術を補いながら、実際の走行実験を通じて開発現場を支えたいと考えております。</p><div class="closing-sign"><span>岩谷 努</span><small>APPLICATION FOR AUTONOMOUS DRIVING DEVELOPMENT DRIVER</small></div></section>
+    <section id="contact" class="closing"><p class="eyebrow">NEXT MISSION</p><h2><span>これまでの現場経験を活かし、</span><em>完全自動運転開発に全力を尽くします。</em></h2><p>これまでの経験から、貴社が目指す、周囲の状況を読み取り、「空気を読みながら走行する」自動運転の実現に強く共感しております。「We Overtake Tesla」を掲げて自社開発に挑む貴社で、これまでの現場経験を活かし、不足する知識や技術を補いながら、実際の走行実験を通じて開発現場を支えたいと考えております。</p><div class="closing-sign"><span>岩谷 努</span><small>APPLICATION FOR AUTONOMOUS DRIVING DEVELOPMENT DRIVER</small></div></section>
   </main>
   <footer><span>© 2026 IWAYA TSUTOMU</span><span>APPLICATION PORTFOLIO / FIELD EXPERIENCE</span><a class="github-link" href="https://github.com/tsutomu-iwaya1984" target="_blank" rel="noopener">GitHub</a></footer>
-  <script src="script.js"></script>
+  <script>
+(() => {
+  const bar = document.querySelector('.progress span');
+  function updateProgress() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.width = `${max > 0 ? Math.min(100, Math.max(0, window.scrollY / max * 100)) : 0}%`;
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  window.addEventListener('load', updateProgress);
+  updateProgress();
+})();
+  </script>
 </body>
 </html>
-<style id="strengths-heading-inline-fix">
-#strengths .section-head{border-bottom:0!important;padding-bottom:0!important;text-align:center!important}
-#strengths .section-head h2{width:min(920px,100%);max-width:920px;margin-left:auto!important;margin-right:auto!important;text-align:center!important;font-size:clamp(2.5rem,3.4vw,4.2rem);line-height:1.12;letter-spacing:-.07em}
-#strengths .section-head h2 span,#strengths .section-head h2 em{display:block;white-space:normal}
-#strengths .section-head h2 em{color:#1677ff!important}
-@media(max-width:760px){#strengths .section-head h2{font-size:clamp(2.2rem,9vw,3rem)}}
-</style>
-<style id="eyebrow-consistency-inline-fix">
-.hero-copy>.eyebrow,.closing>.eyebrow{width:100%;max-width:920px;margin-left:auto;margin-right:auto;text-align:center;font-family:var(--mono);font-weight:500;font-size:.68rem;letter-spacing:.14em;line-height:1.4}
-@media(max-width:760px){.hero-copy>.eyebrow,.closing>.eyebrow{font-size:.68rem;letter-spacing:.14em}}
-</style>
-<style id="strengths-heading-spacing-inline-fix">
-#strengths .section-head{padding-bottom:clamp(3rem,5vw,5rem)!important;margin-bottom:0!important}
-#strengths .strength-grid{position:relative;z-index:1}
-</style>
-<style id="strengths-grid-spacing-inline-fix">
-#strengths .strength-grid{margin-top:clamp(3rem,5vw,5rem)!important}
-@media(max-width:760px){#strengths .strength-grid{margin-top:2rem!important}}
-</style>
-<style id="strengths-card-consistency-inline-fix">
-#strengths .strength-grid .card{display:flex!important;flex-direction:column!important;align-items:center!important;padding:34px!important}
-#strengths .strength-grid .card .card-no{align-self:flex-start;width:100%;min-height:1.4em;text-align:left}
-#strengths .strength-grid .card h3{display:flex;align-items:center;justify-content:center;width:100%;min-height:3em;margin:28px auto 0!important;text-align:center!important;line-height:1.45}
-#strengths .strength-grid .card p{width:100%!important;max-width:34ch!important;margin:30px auto 0!important;text-align:justify!important;line-height:1.95!important}
-@media(max-width:760px){#strengths .strength-grid .card{padding:26px 22px!important}#strengths .strength-grid .card h3{min-height:0;margin-top:24px!important}#strengths .strength-grid .card p{max-width:100%!important;margin-top:24px!important;text-align:left!important;line-height:1.9!important}}
-</style>
-<style id="strengths-paragraph-spacing-inline-fix">
-#strengths .strength-grid .card p{margin-top:1em!important}
-@media(max-width:760px){#strengths .strength-grid .card p{margin-top:1em!important}}
-</style>
-<style id="strengths-heading-height-inline-fix">
-#strengths .strength-grid .card h3{min-height:0!important;align-items:flex-start!important}
-</style>
-<style id="strengths-card-layout-inline-fix">
-#strengths .strength-grid .card{display:grid!important;grid-template-rows:auto auto 1fr!important;align-content:start!important;justify-items:center!important;align-items:start!important}
-#strengths .strength-grid .card .card-no{grid-row:1;align-self:start!important;justify-self:start!important}
-#strengths .strength-grid .card h3{grid-row:2;min-height:0!important;align-self:start!important;margin:28px auto 0!important;text-align:center!important}
-#strengths .strength-grid .card p{grid-row:3;margin:1em auto 0!important;text-indent:1em!important}
-@media(max-width:760px){#strengths .strength-grid .card h3{margin-top:24px!important}#strengths .strength-grid .card p{margin-top:1em!important;text-indent:1em!important}}
-</style>
-<script>document.querySelectorAll('#strengths .strength-grid .card p').forEach(p=>{p.textContent=p.textContent.replace(/^[　\s]+/,'');});</script>
-</script>
-<style id="strengths-paragraph-center-inline-fix">
-#strengths .strength-grid .card p{ text-align:center!important; text-align-last:center!important; text-indent:1em!important; }
-@media(max-width:760px){#strengths .strength-grid .card p{ text-align:center!important; text-align-last:center!important; text-indent:1em!important; }}
-</style>
-<style id="strengths-paragraph-block-center-inline-fix">
-#strengths .strength-grid .card p{ width:min(34ch,100%)!important; max-width:34ch!important; margin:1em auto 0!important; text-align:left!important; text-align-last:start!important; text-indent:1em!important; }
-@media(max-width:760px){#strengths .strength-grid .card p{ width:min(34ch,100%)!important; max-width:100%!important; text-align:left!important; text-align-last:start!important; text-indent:1em!important; }}
-</style>
-<style id="strengths-balanced-text-inline-fix">
-#strengths .strength-grid .card h3{width:100%!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important}
-#strengths .strength-grid .card p{width:min(34ch,100%)!important;max-width:34ch!important;margin:1em auto 0!important;text-align:justify!important;text-align-last:start!important;text-indent:0!important}
-@media(max-width:760px){#strengths .strength-grid .card p{width:100%!important;max-width:100%!important;text-align:left!important;text-align-last:start!important;text-indent:0!important}}
-</style>
-<style id="strengths-final-centering-inline-fix">
-#strengths .strength-grid .card h3{display:block!important;width:100%!important;margin-inline:auto!important;text-align:center!important;text-align-last:center!important}
-#strengths .strength-grid .card p{box-sizing:border-box!important;width:100%!important;max-width:none!important;margin-inline:auto!important;padding-inline:0!important;text-align:justify!important;text-align-last:start!important;text-indent:0!important}
-@media(max-width:760px){#strengths .strength-grid .card p{width:100%!important;text-align:left!important;text-align-last:start!important}}
-</style>
-<style id="strengths-paragraph-indent-final-fix">
-#strengths .strength-grid .card p{text-indent:1em!important}
-@media(max-width:760px){#strengths .strength-grid .card p{text-indent:1em!important}}
-</style>
-<style id="footer-github-readable-fix">
-footer a.github-link{font-size:1rem!important;font-weight:700!important;line-height:1.5!important;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px}
-</style>
-<style id="strengths-content-height-fix">
-#strengths .strength-grid .card{min-height:0!important;height:auto!important;grid-template-rows:auto auto auto!important}
-</style>
