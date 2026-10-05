@@ -58,17 +58,8 @@ h1 { font-size:clamp(2rem,3.4vw,4.2rem); text-wrap:pretty; }
 .dark-section .eyebrow { color:#aebcc8; }
 .approach-layout,.closing>p:not(.eyebrow) { width:min(920px,100%); margin-inline:auto; }
 .approach-summary p,.closing>p:not(.eyebrow) { border-top:2px solid var(--cyan); padding-top:24px; font-size:1rem; line-height:1.95; text-indent:1em; }
-.career-layout { width:min(1100px,100%); margin:auto; display:grid; grid-template-columns:1.15fr 1fr; gap:64px; }
-.career-layout h3 { margin-bottom:20px; font-size:1.15rem; }
-.timeline { list-style:none; padding:0; margin:0; }
-.timeline li { border-top:1px solid #d9ddda; padding:20px 0; }
-.timeline time { color:var(--muted); font:500 .8rem/1.5 var(--mono); }
-.timeline h4 { margin:8px 0; font-size:1rem; }
-.timeline p,.career-facts p { font-size:1rem; line-height:1.95; text-indent:1em; }
-.qualifications { list-style:none; margin:0 0 36px; padding:0; }
-.qualifications li { border-top:1px solid #d9ddda; padding:16px 0; }
-.qualifications strong,.qualifications span { display:block; }
-.qualifications span { color:var(--muted); font-size:.9rem; }
+.career-summary { width:min(920px,100%); margin-inline:auto; }
+.career-summary p { border-top:2px solid var(--ink); padding-top:24px; font-size:1rem; line-height:1.95; text-indent:1em; text-align:left; }
 .closing { background:var(--cream); }
 .closing h2 { margin:0 auto 32px; max-width:1100px; }
 .closing>p:not(.eyebrow) { border-top-color:var(--ink); }
@@ -104,7 +95,6 @@ footer { padding:24px 5vw; display:flex; align-items:center; justify-content:spa
   .card p { font-size:1rem; }
   .gallery-track { grid-template-columns:1fr; }
   .gallery-note { text-align:left; text-indent:1em; }
-  .career-layout { grid-template-columns:1fr; gap:36px; }
   .closing-sign { display:block; }
   .closing-sign small { display:block; margin-top:8px; }
   footer { padding:22px 7vw; flex-direction:column; align-items:flex-start; gap:8px; }
@@ -161,29 +151,8 @@ footer { padding:24px 5vw; display:flex; align-items:center; justify-content:spa
     </section>
 
     <section id="career" class="section" aria-labelledby="career-title">
-      <div class="section-head"><p class="eyebrow">03 / CAREER</p><h2 id="career-title"><span>整備・販売からバス運転へ、</span><em>現場経験を重ねてまいりました。</em></h2></div>
-      <div class="career-layout">
-        <div class="career-history">
-          <h3>職務経歴</h3>
-          <ol class="timeline">
-            <li><time>2005年4月〜2010年10月</time><h4>株式会社日産サティオ島根</h4><p>自動車整備・車検・点検。不具合の原因究明と修理、整備提案に携わってまいりました。</p></li>
-            <li><time>2011年4月〜2012年12月</time><h4>出雲交通電気</h4><p>車両の電装品取付・修理と販売、車両や用途に合った商品の提案に携わってまいりました。</p></li>
-            <li><time>2013年7月〜2015年10月</time><h4>株式会社カーテックス一畑</h4><p>大型車・小型車の板金・整備・塗装、修理内容の検討や作業の進捗管理に携わってまいりました。</p></li>
-            <li><time>2015年11月〜2021年5月</time><h4>株式会社中国ジェイアールバス</h4><p>路線・高速バスの運転、乗務前の車両点検と運行条件の確認を担当してまいりました。</p></li>
-            <li><time>2021年6月〜現在</time><h4>松江市交通局</h4><p>一般路線・貸切バスの運行に従事しております。道路や天候の状況に応じた安全運行を担当しております。</p></li>
-          </ol>
-        </div>
-        <aside class="career-facts" aria-label="資格と日常の運転経験">
-          <h3>主な資格・免許</h3>
-          <ul class="qualifications">
-            <li><strong>二級自動車整備士</strong><span>ガソリン・ジーゼル／2005年3月</span></li>
-            <li><strong>大型自動車第二種運転免許</strong><span>2015年10月取得</span></li>
-            <li><strong>普通自動車第一種運転免許</strong><span>2003年3月取得</span></li>
-          </ul>
-          <h3>日常の運転経験</h3>
-          <p>運転支援機能を備えた自家用車を日常的に使用しており、運転支援機能を使用している際の加速・減速や車両の挙動を体感しております。渋滞時や混雑時、予想外の他車の動きを含め、実際の使用者として感じた車両の特徴や課題を記録・整理し、貴社の完全自動運転に向けた走行実験でのデータ収集・分析に活かしたいと考えております。</p>
-        </aside>
-      </div>
+      <div class="section-head"><p class="eyebrow">03 / CAREER</p><h2 id="career-title"><span>現場で積み重ねた</span><em>経験を活かします。</em></h2></div>
+      <div class="career-summary"><p>自動車整備、販売を通じてお客様のご要望に親身に寄り添い、車両状態を見極めた修理内容や商品の提案を通じて信頼関係を築いてまいりました。現在ではその経験を土台として路線・貸切バスの運行業務に携わり、天候や路面に応じた適切な運転でお客様に安心・安全な輸送サービスを提供させていただいております。</p></div>
     </section>
 
     <section id="contact" class="closing"><p class="eyebrow">NEXT MISSION</p><h2><span>これまでの現場経験を活かし、</span><em>完全自動運転開発に全力を尽くします。</em></h2><p>これまでの経験から、貴社が目指す、周囲の状況を読み取り、「空気を読みながら走行する」自動運転の実現に強く共感しております。「We Overtake Tesla」を掲げて自社開発に挑む貴社で、これまでの現場経験を活かし、不足する知識や技術を補いながら、実際の走行実験を通じて開発現場を支えたいと考えております。</p><div class="closing-sign"><span>岩谷 努</span><small>APPLICATION FOR AUTONOMOUS DRIVING DEVELOPMENT DRIVER</small></div></section>
