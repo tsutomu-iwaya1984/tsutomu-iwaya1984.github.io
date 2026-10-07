@@ -47,7 +47,10 @@ h1 { font-size:clamp(2rem,3.4vw,4.2rem); text-wrap:pretty; }
 .card p { margin-top:1.95em; font-size:.98rem; line-height:1.95; text-align:left; text-indent:1em; color:#d7e0e9; }
 .field-gallery { background:var(--soft); }
 .gallery-track { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
-.scene-card { margin:0; min-width:0; background:#0b0d0f; color:white; box-shadow:8px 8px 0 var(--cyan); }
+.scene-card { margin:0; min-width:0; background:#0b0d0f; color:white; box-shadow:8px 8px 0 var(--cyan); transition:transform .35s ease; }
+.scene-card:active { transform:translateY(-8px); }
+@media (hover:hover) and (pointer:fine) { .scene-card:hover { transform:translateY(-8px); } }
+@media (prefers-reduced-motion:reduce) { .scene-card { transition:none; } .scene-card:hover,.scene-card:active { transform:none; } }
 .scene-card img { width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; }
 .scene-card figcaption { display:grid; gap:7px; padding:18px; }
 .scene-card figcaption span,.scene-card figcaption small { font:500 .62rem/1.5 var(--mono); letter-spacing:.07em; color:var(--cyan); }
